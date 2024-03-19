@@ -60,8 +60,8 @@ header{
     border-color: #3D3D3D;
 }
 .search-bar .icon{
-    top: 16px;
-    left: 50px;
+    top: 17px;
+    left: 20px;
     font-size: 20px;
 }
 .btn-1{
@@ -170,6 +170,7 @@ header{
     border: 1px solid #ffffff;
     background-color: #3D3D3D;
     color: #F0F0F0;
+    cursor: pointer;
     /* width: max-content; */
 }
 #filter-tab{

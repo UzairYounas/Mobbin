@@ -38,7 +38,7 @@ function Apps() {
     const handleMouseLeave = () => {
         setPlaying(false);
         videoRef.current.pause();
-        videoRef.current.currentTime = 0; // Rewind video to the beginning
+        videoRef.current.currentTime = 0;
     };
 
     return (
