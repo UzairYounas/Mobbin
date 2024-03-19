@@ -1,0 +1,10 @@
+@media (max-width: 991px) {
+    .btn-1,
+    .btn-2{
+        display: none;
+    }
+    .col-md-12{
+        position: absolute;
+        top: 60px;
+    }
+}

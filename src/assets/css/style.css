@@ -1,0 +1,271 @@
+@font-face {
+    font-family: BasierSquare;
+    src: url(../Fonts/BasierSquare-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+.bg-1{
+    background-color: #111111;
+}
+header{
+    background-color: #111111;
+}
+.container-fluid{
+    padding: 4px 32px 4px 32px;
+}
+.p-l-32{
+    padding-left: 32px !important;
+}
+.p-r-32{
+    padding-right: 32px !important;
+}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.nav-icons a,
+.home .py-4 a{
+    color: #616161;
+    text-decoration: none;
+    font-family: BasierSquare;
+    transition: 0.2s;
+}
+.nav-icons a:hover,
+.home .py-4 a:hover{
+    color: #F0F0F0;
+}
+.nav-icons .active,
+.home .py-4 .active{
+    color: #F0F0F0;
+}
+.search-bar input{
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    background-color: #3D3D3D;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.search-bar input:focus{
+    border-color: #3D3D3D;
+}
+.search-bar .icon{
+    top: 16px;
+    left: 50px;
+    font-size: 20px;
+}
+.btn-1{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px 8px 15px;
+    color: #ffffff;
+    background-color: transparent;
+    font-family: BasierSquare;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.btn-1:hover{
+    background-color: #4d4c4c;
+}
+.btn-2{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px 8px 15px;
+    color: #000000;
+    background-color: #F0F0F0;
+    font-family: BasierSquare;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.btn-2:hover{
+    background-color: #D7D7D7;
+}
+.btn-3{
+    border: 1px solid hsl(0 0% 23.92%);
+    border-radius: 50px;
+    padding: 8px;
+    cursor: pointer;
+}
+.btn-3:hover{
+    background-color: #4d4c4c59;
+}
+.btn-3 img{
+    border-radius: 50%;
+    width: 30px;
+}
+
+/* ================ Home Design ==================== */
+.home{
+    padding-top: 32px;
+}
+.home h1{
+    color: #F0F0F0;
+    font-family: BasierSquare;
+    font-weight: 700;
+}
+.gap-x-24{
+    column-gap: 24px;
+}
+.gap-y-24{
+    row-gap: 24px;
+}
+.btn-4{
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    color: #F0F0F0;
+    background-color: #2E2E2E;
+    font-family: BasierSquare;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.btn-4:hover{
+    background-color: #2e2e2e8f;
+}
+.vr-1{
+    border-left: 1px solid #F0F0F0;
+    height: 32px;
+}
+.btn-5,
+.btn-6{
+    outline: none;
+    border: none;
+    background-color: #2e2e2edc;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+}
+.btn-5{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.btn-5:hover,
+.btn-6:hover{
+    background-color: #2E2E2E;
+}
+.btn-6{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.border{
+    border: 1px solid #ffffff;
+    background-color: #3D3D3D;
+    color: #F0F0F0;
+    /* width: max-content; */
+}
+#filter-tab{
+    width: max-content;
+}
+.position-relative{
+    overflow-x: scroll;
+}
+.position-relative::-webkit-scrollbar {
+    display: none;
+}
+
+/* =================== Apps Design ====================== */
+.tinder{
+    min-width: 243px;
+    background-color: #222222;
+    padding: 24px 28px 28px 28px;
+    border-radius: 28px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.tinder img,
+.tinder video{
+    border-radius: 28px;
+}
+.tinder-data img{
+    border-radius: 15px;
+    width: 13%;
+    height: 15%;
+}
+.tinder-data h5{
+    font-family: BasierSquare;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.tinder-data p{
+    font-family: BasierSquare;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.save-icon{
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 11px;
+    bottom: 5px;
+    right: 48px;
+    cursor: pointer;
+}
+.save-icon:hover{
+    background-color: #ffffffd3;
+}
+.dots-icon{
+    background-color: #3D3D3D;
+    width: 35px;
+    height: 35px;
+    border-radius: 11px;
+    right: 0;
+    bottom: 5px;
+    cursor: pointer;
+}
+.dots-icon:hover{
+    background-color: #3d3d3de3;
+}
+.tab-icons{
+    display: none;
+    transition: all 0.4s ease-out;
+}
+.slick-dots{
+    display: none !important;
+    transition: all 0.4s ease-out;
+}
+.app-div:hover .tab-icons,
+.app-div:hover .slick-dots{
+    display: block !important;
+}
+
+/* ========== Slick Crausol Design ========== */
+
+.slick-dots li.slick-active button:before{
+    color: #F0F0F0 !important;
+}
+.slick-dots li button:before{
+    color: #616161 !important;
+}
+.slick-dots li{
+    margin: 0 !important;
+}
+.slick-prev{
+    left: -16px !important;
+    z-index: 1 !important;
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 30px !important;
+    color: #000000 !important;
+}
+.slick-next{
+    right: -4px !important;
+}
