@@ -44,6 +44,7 @@ function Apps() {
     return (
         <div className='container-fluid mt-5 p-l-32 p-r-32'>
             <div className="row">
+                
                 <div className="col-lg-3 col-md-4 col-sm-6 app-div">
                     <div className='tinder'>
                         <Slider {...settings}>

@@ -4,6 +4,7 @@ import './assets/css/Responsive.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import Apps from './components/Apps';
+import Screens from './components/Screens';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <div className='bg-1'>
       <Navbar />
       <Home />
-      <Apps />
+      {/* <Apps /> */}
+      {/* <Screens /> */}
     </div>
   );
 }

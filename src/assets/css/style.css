@@ -157,29 +157,34 @@ header{
     left: 0;
     top: 0;
 }
-.btn-5:hover,
-.btn-6:hover{
-    background-color: #2E2E2E;
-}
 .btn-6{
     position: absolute;
     right: 0;
     bottom: 0;
+}
+.btn-5:hover,
+.btn-6:hover{
+    background-color: #2E2E2E;
 }
 .border{
     border: 1px solid #ffffff;
     background-color: #3D3D3D;
     color: #F0F0F0;
     cursor: pointer;
-    /* width: max-content; */
+    font-family: BasierSquare;
+    font-weight: 600;
+}
+.active-border{
+    background-color: #F0F0F0;
+    color: #111111;
 }
 #filter-tab{
     width: max-content;
 }
-.position-relative{
+.btn-tab{
     overflow-x: scroll;
 }
-.position-relative::-webkit-scrollbar {
+.btn-tab::-webkit-scrollbar {
     display: none;
 }
 
@@ -239,12 +244,16 @@ header{
     display: none;
     transition: all 0.4s ease-out;
 }
-.slick-dots{
+.slick-dots,
+.slick-prev,
+.slick-next{
     display: none !important;
     transition: all 0.4s ease-out;
 }
 .app-div:hover .tab-icons,
-.app-div:hover .slick-dots{
+.app-div:hover .slick-dots,
+.app-div:hover .slick-prev,
+.app-div:hover .slick-next{
     display: block !important;
 }
 
@@ -269,4 +278,58 @@ header{
 }
 .slick-next{
     right: -4px !important;
+}
+
+/* ============== Screen Design =============== */
+.br-r-28{
+    border-radius: 28px;
+}
+.screen-div .overlay{
+    background: linear-gradient(rgba(21, 21, 21, 0.5) 0%, rgba(21, 21, 21, 0) 20.83%, rgba(21, 21, 21, 0) 79.17%, rgba(21, 21, 21, 0.5) 100%);
+    display: none !important;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.screen-div:hover .overlay{
+    display: flex !important;
+}
+.checkbox-round{
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid #005CC8;
+    clip-path: circle(47% at 50% 50%);
+}
+.popup{
+    position: absolute;
+    top: 51px;
+    left: 21px;
+    border-radius: 20px;
+    width: 259px;
+    height: 146px;
+    background-color: #1e1e1e;
+}
+.popup-data{
+    color: #F0F0F0;
+    font-family: BasierSquare;
+    font-weight: 700;
+}
+.popup-data:hover{
+    background-color: #2e2e2e;
+    border-radius: 10px;
+}
+.popup-data p{
+    margin-bottom: 0 !important;
+}
+.btn-7{
+    outline: none;
+    border: none;
+    background-color: #F0F0F0;
+    padding: 7px 30px;
+    border-radius: 10px;
+    color: #000000;
+    font-family: BasierSquare;
+    font-size: 17px;
+}
+.btn-7:hover{
+    background-color: #D7D7D7;
 }
