@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Common/Navbar'
-import Home from '../components/Home'
+import Home from '../components/Home';
+import Apps from '../components/Apps';
 
 function IOS() {
   return (
     <>
-      <Navbar />
+      <Apps />
       <Home />
     </>
   )

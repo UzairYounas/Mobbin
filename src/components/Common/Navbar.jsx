@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link, NavLink } from "react-router-dom";
+
 import { FiSearch } from "react-icons/fi";
 import { HiBars2 } from "react-icons/hi2";
 import userimg from '../../assets/images/user-img.png'
@@ -14,8 +16,8 @@ function Navbar() {
             <div className="col-lg-4 col-md-12 col-sm-12 col-12">
               <div className="d-flex align-items-center gap-4 nav-icons">
                 <a href="" className='text-white d-lg-block d-md-none d-sm-none d-none'><IoLogoTwitch className='h3' /></a>
-                <a href="" className='active'>iOS</a>
-                <a href="">Android</a>
+                <NavLink className="/">IOS</NavLink>
+                <NavLink className="/Apps">Android</NavLink>
                 <a href="">Web</a>
               </div>
             </div>

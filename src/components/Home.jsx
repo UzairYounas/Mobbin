@@ -1,5 +1,4 @@
 import React from 'react'
-import Screens from './Screens';
 import { Link, NavLink } from "react-router-dom";
 
 function Home() {
@@ -9,13 +8,12 @@ function Home() {
             <div className="container-fluid p-l-32 p-r-32">
                 <h1>Discover </h1>
                 <div className="d-flex gap-x-24 py-4">
-                <NavLink to="/Apps"  > <a> Apps </a></NavLink>
-                <NavLink to="/Screens" > <a> Screens </a></NavLink>
-                <NavLink to="/Elements" > <a> UI Elements </a></NavLink>
-                <NavLink to="/Flows" > <a> Flows </a></NavLink>
+                <NavLink to="/Apps" > Apps</NavLink>
+                <NavLink to="/Screens" > Screens</NavLink>
+                <NavLink to="/Elements" > UI Elements</NavLink>
+                <NavLink to="/Flows" > Flows</NavLink>
                 </div>
             </div>
-            {/* <Screens toggleState={toggleState} /> */}
         </div>
     )
 }

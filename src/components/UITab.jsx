@@ -46,7 +46,6 @@ import Angi2 from '../assets/images/Angi2.jpg'
 import Angi3 from '../assets/images/Angi3.jpg'
 import Angilogo from '../assets/images/Angilogo.webp'
 
-
 import Applesports from '../assets/images/Applesports.mp4'
 import Applesportslogo from '../assets/images/Applesportslogo.webp'
 
@@ -83,7 +82,7 @@ function UITab({toggleState}) {
 
   return (
     <>
-      <div className={toggleState === 1 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 1 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
                 <div className="row">
                 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">

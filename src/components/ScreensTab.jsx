@@ -20,7 +20,7 @@ import Overlay from './Overlay'
 function ScreensTab({toggleState}) {
   return (
     <>
-    <div className={toggleState === 1 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 1 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
                 <div className="row">
                     <div className="col-lg-3 col-md-4 col-sm-6">
                         <div className=' position-relative screen-div'>

@@ -351,3 +351,76 @@ header{
     margin-bottom: 0;
     color: #727171;
 }
+
+/* ================= Flow Page Design ================== */
+
+.flows-heading h3{
+    color: #F0F0F0;
+    font-family: BasierSquare;
+    font-weight: 600;
+}
+.flows-heading span{
+    color: #747474;
+    font-family: BasierSquare;
+    font-size: 24px;
+    font-weight: 600;
+}
+.flows-heading img{
+    border-radius: 10px;
+    width: 4%;
+    height: 15%;
+}
+.collection-icon{
+    outline: none;
+    border: none;
+    background-color: #383838;
+    width: 35px;
+    height: 35px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+.collection-icon:hover{
+    background-color: #414141;
+}
+.dotted-icon{
+    outline: none;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #f0f0f0b9;
+    border-radius: 11px;
+    bottom: 5px;
+    cursor: pointer;
+}
+.dotted-icon:hover{
+    background-color: #f0f0f011;
+}
+.btn-8{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 12px 8px 12px;
+    color: #000000;
+    background-color: #F0F0F0;
+    font-family: BasierSquare;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.btn-8:hover{
+    background-color: #D7D7D7;
+}
+.flows-img img,
+.flows-img video{
+    width: 250px;
+    border-radius: 28px;
+}
+.icons{
+    display: none;
+    transition: 0.3s;
+}
+.flows-data:hover .icons{
+    display: flex;
+}
+.flows-data:hover .head1{
+    text-decoration: underline;
+}

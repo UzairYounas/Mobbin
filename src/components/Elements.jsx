@@ -24,14 +24,14 @@ function Elements() {
             <Navbar />
             <Home />
             <div className="container-fluid p-l-32 p-r-32 d-flex flex-col align-items-center gap-y-24 gap-3">
-                <button className='d-flex align-items-center btn-4 gap-2'>
+                <button className='d-lg-flex d-md-flex d-sm-none d-none align-items-center btn-4 gap-2'>
                     <BsFilterLeft />
                     Filters
                 </button>
-                <div className='vr-1 m-0'></div>
+                <div className='vr-1 m-0 d-lg-block d-md-block d-sm-none d-none'></div>
 
                 {/* =========== Scroll Bar ============== */}
-                
+
                 {/* <div className="tab-overlay d-flex flex-column ">
                     <div className="img-tab d-flex align-items-center gap-2 ">
                         <img src={screen1} alt="" />
