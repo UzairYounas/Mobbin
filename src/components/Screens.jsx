@@ -1,330 +1,91 @@
 import React, { useState } from 'react'
-import screen1 from '../assets/images/screen1.png'
-import screen2 from '../assets/images/screen2.png'
-import screen3 from '../assets/images/screen3.png'
-import screen4 from '../assets/images/screen4.png'
-import cleo from '../assets/images/cleo.webp'
-import healthmate from '../assets/images/healthmatelogo.webp'
-import shop from '../assets/images/shoplogo.webp'
-import { HiDotsHorizontal } from "react-icons/hi";
-import { CiImageOn } from "react-icons/ci";
-import { MdOutlineFileDownload } from "react-icons/md";
-import { FaLink } from "react-icons/fa6";
+import { BsFilterLeft } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa6";
+
+import Home from './Home'
+import ScreensTab from './ScreensTab';
+import Navbar from './Common/Navbar';
 
 function Screens() {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const toggleVisibility = () => {
-        setIsVisible(!isVisible);
+    const filterTab = (amount) => {
+        document.getElementById('filter-tab').scrollBy({ left: amount, behavior: 'smooth' });
     };
+    const [toggleState, setToggleState] = useState(1);
+    const toggleTab = (index) => {
+        setToggleState(index);
+    }
+
     return (
-        <div className='container-fluid mt-5 p-l-32 p-r-32'>
-            <div className="row">
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className=' position-relative screen-div'>
-                        <img className='w-100 h-100 br-r-28' src={screen1} alt="screen1.pnng" />
+        <div className='bg-1'>
+            <Navbar />
+            <Home />
+            <div className="container-fluid p-l-32 p-r-32 d-flex flex-col align-items-center gap-y-24 gap-3">
+                <button className='d-flex align-items-center btn-4 gap-2'>
+                    <BsFilterLeft />
+                    Filters
+                </button>
+                <div className='vr-1 m-0'></div>
 
-                        <div className="overlay w-100 h-100 position-absolute d-flex flex-column justify-content-between top-0 p-3">
-                            <div className='d-flex align-items-center justify-content-between w-100'>
-                                <input type="checkbox" className='checkbox-round' />
-                                <HiDotsHorizontal onClick={toggleVisibility} className='text-white h3' style={{ cursor: 'pointer' }} />
-                            </div>
-                            {isVisible &&
-                                <div className='popup p-3 d-flex flex-column justify-content-between'>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <CiImageOn className='h4 m-0' />
-                                        <p>Copy screen</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <MdOutlineFileDownload className='h4 m-0' />
-                                        <p>Download as PNG</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <FaLink className='h4 m-0' />
-                                        <p>Copy Screen link</p>
-                                    </div>
-                                </div>
-                            }
-                            <div className="d-flex align-items-center justify-content-around w-100">
-                                <button className='btn-7'>copy</button>
-                                <button className='btn-7'>Save</button>
-                            </div>
+                {/* =========== Scroll Bar ============== */}
+
+
+                <div className='position-relative btn-tab'>
+                    <button onClick={() => filterTab(-300)} className='btn-5 d-767-none'><FaArrowLeft size={20} /></button>
+                    <button onClick={() => filterTab(300)} className='btn-6 d-767-none'><FaArrowRight size={20} /></button>
+                    <div id="filter-tab" className='d-flex gap-3'>
+                        <div className={toggleState === 1 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(1)}>
+                            All
                         </div>
-                    </div>
-
-                    <div className="tinder-data d-flex align-items-center gap-2 pt-3 pb-4">
-                        <img src={cleo} alt="cleo.png" />
-                        <h5 className='mb-0 text-white'>cleo</h5>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className=' position-relative screen-div'>
-                        <img className='w-100 h-100 br-r-28' src={screen2} alt="screen2.pnng" />
-
-                        <div className="overlay w-100 h-100 position-absolute d-flex flex-column justify-content-between top-0 p-3">
-                            <div className='d-flex align-items-center justify-content-between w-100'>
-                                <input type="checkbox" className='checkbox-round' />
-                                <HiDotsHorizontal onClick={toggleVisibility} className='text-white h3' style={{ cursor: 'pointer' }} />
-                            </div>
-                            {isVisible &&
-                                <div className='popup p-3 d-flex flex-column justify-content-between'>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <CiImageOn className='h4 m-0' />
-                                        <p>Copy screen</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <MdOutlineFileDownload className='h4 m-0' />
-                                        <p>Download as PNG</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <FaLink className='h4 m-0' />
-                                        <p>Copy Screen link</p>
-                                    </div>
-                                </div>
-                            }
-                            <div className="d-flex align-items-center justify-content-around w-100">
-                                <button className='btn-7'>copy</button>
-                                <button className='btn-7'>Save</button>
-                            </div>
+                        <div className={toggleState === 2 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(2)}>
+                            Finance
                         </div>
-                    </div>
-
-                    <div className="tinder-data d-flex align-items-center gap-2 pt-3 pb-4">
-                        <img src={healthmate} alt="cleo.png" />
-                        <h5 className='mb-0 text-white'>Healthmate</h5>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className=' position-relative screen-div'>
-                        <img className='w-100 h-100 br-r-28' src={screen3} alt="screen3.pnng" />
-
-                        <div className="overlay w-100 h-100 position-absolute d-flex flex-column justify-content-between top-0 p-3">
-                            <div className='d-flex align-items-center justify-content-between w-100'>
-                                <input type="checkbox" className='checkbox-round' />
-                                <HiDotsHorizontal onClick={toggleVisibility} className='text-white h3' style={{ cursor: 'pointer' }} />
-                            </div>
-                            {isVisible &&
-                                <div className='popup p-3 d-flex flex-column justify-content-between'>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <CiImageOn className='h4 m-0' />
-                                        <p>Copy screen</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <MdOutlineFileDownload className='h4 m-0' />
-                                        <p>Download as PNG</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <FaLink className='h4 m-0' />
-                                        <p>Copy Screen link</p>
-                                    </div>
-                                </div>
-                            }
-                            <div className="d-flex align-items-center justify-content-around w-100">
-                                <button className='btn-7'>copy</button>
-                                <button className='btn-7'>Save</button>
-                            </div>
+                        <div className={toggleState === 3 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(3)}>
+                            Business
                         </div>
-                    </div>
-
-                    <div className="tinder-data d-flex align-items-center gap-2 pt-3 pb-4">
-                        <img src={shop} alt="shop.png" />
-                        <h5 className='mb-0 text-white'>shop</h5>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className=' position-relative screen-div'>
-                        <img className='w-100 h-100 br-r-28' src={screen4} alt="screen4.png" />
-
-                        <div className="overlay w-100 h-100 position-absolute d-flex flex-column justify-content-between top-0 p-3">
-                            <div className='d-flex align-items-center justify-content-between w-100'>
-                                <input type="checkbox" className='checkbox-round' />
-                                <HiDotsHorizontal onClick={toggleVisibility} className='text-white h3' style={{ cursor: 'pointer' }} />
-                            </div>
-                            {isVisible &&
-                                <div className='popup p-3 d-flex flex-column justify-content-between'>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <CiImageOn className='h4 m-0' />
-                                        <p>Copy screen</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <MdOutlineFileDownload className='h4 m-0' />
-                                        <p>Download as PNG</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <FaLink className='h4 m-0' />
-                                        <p>Copy Screen link</p>
-                                    </div>
-                                </div>
-                            }
-                            <div className="d-flex align-items-center justify-content-around w-100">
-                                <button className='btn-7'>copy</button>
-                                <button className='btn-7'>Save</button>
-                            </div>
+                        <div className={toggleState === 4 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(4)}>
+                            Health & Fitness
                         </div>
-                    </div>
-
-                    <div className="tinder-data d-flex align-items-center gap-2 pt-3 pb-4">
-                        <img src={healthmate} alt="cleo.png" />
-                        <h5 className='mb-0 text-white'>Healthmate</h5>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className=' position-relative screen-div'>
-                        <img className='w-100 h-100 br-r-28' src={screen3} alt="screen3.pnng" />
-
-                        <div className="overlay w-100 h-100 position-absolute d-flex flex-column justify-content-between top-0 p-3">
-                            <div className='d-flex align-items-center justify-content-between w-100'>
-                                <input type="checkbox" className='checkbox-round' />
-                                <HiDotsHorizontal onClick={toggleVisibility} className='text-white h3' style={{ cursor: 'pointer' }} />
-                            </div>
-                            {isVisible &&
-                                <div className='popup p-3 d-flex flex-column justify-content-between'>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <CiImageOn className='h4 m-0' />
-                                        <p>Copy screen</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <MdOutlineFileDownload className='h4 m-0' />
-                                        <p>Download as PNG</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <FaLink className='h4 m-0' />
-                                        <p>Copy Screen link</p>
-                                    </div>
-                                </div>
-                            }
-                            <div className="d-flex align-items-center justify-content-around w-100">
-                                <button className='btn-7'>copy</button>
-                                <button className='btn-7'>Save</button>
-                            </div>
+                        <div className={toggleState === 5 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(5)}>
+                            Food & Drink
                         </div>
-                    </div>
-
-                    <div className="tinder-data d-flex align-items-center gap-2 pt-3 pb-4">
-                        <img src={shop} alt="shop.png" />
-                        <h5 className='mb-0 text-white'>shop</h5>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className=' position-relative screen-div'>
-                        <img className='w-100 h-100 br-r-28' src={screen1} alt="screen1.pnng" />
-
-                        <div className="overlay w-100 h-100 position-absolute d-flex flex-column justify-content-between top-0 p-3">
-                            <div className='d-flex align-items-center justify-content-between w-100'>
-                                <input type="checkbox" className='checkbox-round' />
-                                <HiDotsHorizontal onClick={toggleVisibility} className='text-white h3' style={{ cursor: 'pointer' }} />
-                            </div>
-                            {isVisible &&
-                                <div className='popup p-3 d-flex flex-column justify-content-between'>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <CiImageOn className='h4 m-0' />
-                                        <p>Copy screen</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <MdOutlineFileDownload className='h4 m-0' />
-                                        <p>Download as PNG</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <FaLink className='h4 m-0' />
-                                        <p>Copy Screen link</p>
-                                    </div>
-                                </div>
-                            }
-                            <div className="d-flex align-items-center justify-content-around w-100">
-                                <button className='btn-7'>copy</button>
-                                <button className='btn-7'>Save</button>
-                            </div>
+                        <div className={toggleState === 6 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(6)}>
+                            Education
                         </div>
-                    </div>
-
-                    <div className="tinder-data d-flex align-items-center gap-2 pt-3 pb-4">
-                        <img src={cleo} alt="cleo.png" />
-                        <h5 className='mb-0 text-white'>cleo</h5>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className=' position-relative screen-div'>
-                        <img className='w-100 h-100 br-r-28' src={screen4} alt="screen4.png" />
-
-                        <div className="overlay w-100 h-100 position-absolute d-flex flex-column justify-content-between top-0 p-3">
-                            <div className='d-flex align-items-center justify-content-between w-100'>
-                                <input type="checkbox" className='checkbox-round' />
-                                <HiDotsHorizontal onClick={toggleVisibility} className='text-white h3' style={{ cursor: 'pointer' }} />
-                            </div>
-                            {isVisible &&
-                                <div className='popup p-3 d-flex flex-column justify-content-between'>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <CiImageOn className='h4 m-0' />
-                                        <p>Copy screen</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <MdOutlineFileDownload className='h4 m-0' />
-                                        <p>Download as PNG</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <FaLink className='h4 m-0' />
-                                        <p>Copy Screen link</p>
-                                    </div>
-                                </div>
-                            }
-                            <div className="d-flex align-items-center justify-content-around w-100">
-                                <button className='btn-7'>copy</button>
-                                <button className='btn-7'>Save</button>
-                            </div>
+                        <div className={toggleState === 7 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(7)}>
+                            Shopping
                         </div>
-                    </div>
-
-                    <div className="tinder-data d-flex align-items-center gap-2 pt-3 pb-4">
-                        <img src={healthmate} alt="cleo.png" />
-                        <h5 className='mb-0 text-white'>Healthmate</h5>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-4 col-sm-6">
-                    <div className=' position-relative screen-div'>
-                        <img className='w-100 h-100 br-r-28' src={screen2} alt="screen2.pnng" />
-
-                        <div className="overlay w-100 h-100 position-absolute d-flex flex-column justify-content-between top-0 p-3">
-                            <div className='d-flex align-items-center justify-content-between w-100'>
-                                <input type="checkbox" className='checkbox-round' />
-                                <HiDotsHorizontal onClick={toggleVisibility} className='text-white h3' style={{ cursor: 'pointer' }} />
-                            </div>
-                            {isVisible &&
-                                <div className='popup p-3 d-flex flex-column justify-content-between'>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <CiImageOn className='h4 m-0' />
-                                        <p>Copy screen</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <MdOutlineFileDownload className='h4 m-0' />
-                                        <p>Download as PNG</p>
-                                    </div>
-                                    <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
-                                        <FaLink className='h4 m-0' />
-                                        <p>Copy Screen link</p>
-                                    </div>
-                                </div>
-                            }
-                            <div className="d-flex align-items-center justify-content-around w-100">
-                                <button className='btn-7'>copy</button>
-                                <button className='btn-7'>Save</button>
-                            </div>
+                        <div className={toggleState === 8 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(8)}>
+                            Artificial Intelligence
                         </div>
-                    </div>
-
-                    <div className="tinder-data d-flex align-items-center gap-2 pt-3 pb-4">
-                        <img src={healthmate} alt="cleo.png" />
-                        <h5 className='mb-0 text-white'>Healthmate</h5>
+                        <div className={toggleState === 9 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(9)}>
+                            Travel & Transportation
+                        </div>
+                        <div className={toggleState === 10 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(10)}>
+                            Lifestyle
+                        </div>
+                        <div className={toggleState === 11 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(11)}>
+                            Entertainment
+                        </div>
+                        <div className={toggleState === 12 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(12)}>
+                            Communication
+                        </div>
+                        <div className={toggleState === 13 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(13)}>
+                            Crypto & web3
+                        </div>
+                        <div className={toggleState === 14 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(14)}>
+                            CRM
+                        </div>
+                        <div className={toggleState === 15 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(15)}>
+                            Social Networking
+                        </div>
                     </div>
                 </div>
 
             </div>
+
+            <ScreensTab toggleState={toggleState} />
+
         </div>
     )
 }

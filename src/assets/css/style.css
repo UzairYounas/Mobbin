@@ -167,8 +167,6 @@ header{
     background-color: #2E2E2E;
 }
 .border{
-    border: 1px solid #ffffff;
-    background-color: #3D3D3D;
     color: #F0F0F0;
     cursor: pointer;
     font-family: BasierSquare;
@@ -332,4 +330,24 @@ header{
 }
 .btn-7:hover{
     background-color: #D7D7D7;
+}
+
+.tab-overlay{
+    width: 650px;
+    height: 300px;
+    background-color: #1E1E1E;
+    padding: 10px;
+    border-radius: 10px;
+}
+.img-tab{
+    background-color: #3D3D3D;
+    border-radius: 10px;
+    padding: 16px;
+}
+.img-tab img{
+    width: 80px;
+}
+.tab-overlay p{
+    margin-bottom: 0;
+    color: #727171;
 }

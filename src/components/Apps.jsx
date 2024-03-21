@@ -1,169 +1,80 @@
 import React, { useState, useRef } from 'react'
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import tinder1 from '../assets/images/tinder1.jpg'
-import tinder2 from '../assets/images/tinder2.jpg'
-import tinder3 from '../assets/images/tinder3.jpg'
-import tinderlogo from '../assets/images/tinderlogo.webp'
-import betterment1 from '../assets/images/betterment1.jpg'
-import betterment2 from '../assets/images/betterment2.jpg'
-import betterment3 from '../assets/images/betterment3.jpg'
-import bettermentlogo from '../assets/images/bettermentlogo.webp'
-import iOSApps from '../assets/images/iOSApps.mp4'
-import bloom from '../assets/images/bloom.webp'
-import discord1 from '../assets/images/discord1.jpg'
-import discord2 from '../assets/images/discord2.jpg'
-import discord3 from '../assets/images/discord3.jpg'
-import discordlogo from '../assets/images/discordlogo.webp'
-import { MdOutlineSaveAlt } from "react-icons/md";
-import { BsThreeDots } from "react-icons/bs";
+
+import { BsFilterLeft } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa6";
+import Home from './Home';
+import UITab from './UITab';
+import Navbar from './Common/Navbar';
 
 function Apps() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+    const filterTab = (amount) => {
+        document.getElementById('filter-tab').scrollBy({ left: amount, behavior: 'smooth' });
     };
-    const [playing, setPlaying] = useState(false);
-    const videoRef = useRef(null);
-
-    const handleMouseEnter = () => {
-        setPlaying(true);
-        videoRef.current.play();
-    };
-
-    const handleMouseLeave = () => {
-        setPlaying(false);
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
-    };
+    const [toggleState, setToggleState] = useState(1);
+    const toggleTab = (index) => {
+        setToggleState(index);
+    }
 
     return (
-        <div className='container-fluid mt-5 p-l-32 p-r-32'>
-            <div className="row">
-                
-                <div className="col-lg-3 col-md-4 col-sm-6 app-div">
-                    <div className='tinder'>
-                        <Slider {...settings}>
-                            <div>
-                                <img className='w-100' src={tinder1} alt="tinder1.png" />
-                            </div>
-                            <div className=''>
-                                <img className='w-100' src={tinder2} alt="tinder2.png" />
-                            </div>
-                            <div className=''>
-                                <img className='w-100' src={tinder3} alt="tinder3.png" />
-                            </div>
-                        </Slider>
-                    </div>
-                    <div className="tinder-data position-relative d-flex align-content-center pt-4">
-                        <img src={tinderlogo} alt="tinderlogo.png" />
-                        <div className="d-flex  flex-column ps-2">
-                            <h5 className='mb-0 text-white'>Tinder</h5>
-                            <p className='mb-0 text-secondary'>Meet new People & Date Singles</p>
-                        </div>
-                        <div className='tab-icons'>
-                            <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
-                                <MdOutlineSaveAlt />
-                            </div>
-                            <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
-                                <BsThreeDots className='text-white' />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className='bg-1'>
+            <Navbar />
+            <Home />
 
-                <div className="col-lg-3 col-md-4 col-sm-6 app-div">
-                    <div className='tinder'>
-                        <Slider {...settings}>
-                            <div>
-                                <img className='w-100' src={betterment1} alt="betterment1.png" />
-                            </div>
-                            <div className=''>
-                                <img className='w-100' src={betterment2} alt="betterment2.png" />
-                            </div>
-                            <div className=''>
-                                <img className='w-100' src={betterment3} alt="betterment3.png" />
-                            </div>
-                        </Slider>
-                    </div>
-                    <div className="tinder-data position-relative d-flex align-content-center pt-4">
-                        <img src={bettermentlogo} alt="tinderlogo.png" />
-                        <div className="d-flex  flex-column ps-2">
-                            <h5 className='mb-0 text-white'>Betterment</h5>
-                            <p className='mb-0 text-secondary'>Investments & cash accounts</p>
-                        </div>
-                        <div className='tab-icons'>
-                            <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
-                                <MdOutlineSaveAlt />
-                            </div>
-                            <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
-                                <BsThreeDots className='text-white' />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="container-fluid p-l-32 p-r-32 d-flex flex-col align-items-center gap-y-24 gap-3">
+                <button className='d-flex align-items-center btn-4 gap-2'>
+                    <BsFilterLeft />
+                    Filters
+                </button>
+                <div className='vr-1 m-0'></div>
 
-                <div className="col-lg-3 col-md-4 col-sm-6 app-div">
-                    <div className='tinder'>
-                        <video loop onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave}
-                            ref={videoRef} className='w-100'>
-                            <source src={iOSApps} type="video/mp4" />
-                        </video>
-                    </div>
-                    <div className="tinder-data position-relative d-flex align-content-center pt-4">
-                        <img src={bloom} alt="tinderlogo.png" />
-                        <div className="d-flex  flex-column ps-2">
-                            <h5 className='mb-0 text-white'>Bloom</h5>
-                            <p className='mb-0 text-secondary'>Mental Health & Self Care</p>
+                {/* =========== Scroll Bar ============== */}
+
+
+                <div className='position-relative btn-tab'>
+                    <button onClick={() => filterTab(-300)} className='btn-5 d-767-none'><FaArrowLeft size={20} /></button>
+                    <button onClick={() => filterTab(300)} className='btn-6 d-767-none'><FaArrowRight size={20} /></button>
+                    <div id="filter-tab" className='d-flex gap-3'>
+                        <div className={toggleState === 1 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(1)}>
+                            All
                         </div>
-                        <div className='tab-icons'>
-                            <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
-                                <MdOutlineSaveAlt />
-                            </div>
-                            <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
-                                <BsThreeDots className='text-white' />
-                            </div>
+                        <div className={toggleState === 2 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(2)}>
+                            Home
                         </div>
-                    </div>
-                </div>
-                
-                <div className="col-lg-3 col-md-4 col-sm-6 app-div">
-                    <div className='tinder'>
-                        <Slider {...settings}>
-                            <div>
-                                <img className='w-100' src={discord1} alt="discord1.png" />
-                            </div>
-                            <div className=''>
-                                <img className='w-100' src={discord2} alt="discord2.png" />
-                            </div>
-                            <div className=''>
-                                <img className='w-100' src={discord3} alt="discord3.png" />
-                            </div>
-                        </Slider>
-                    </div>
-                    <div className="tinder-data position-relative d-flex align-content-center pt-4">
-                        <img src={discordlogo} alt="tinderlogo.png" />
-                        <div className="d-flex  flex-column ps-2">
-                            <h5 className='mb-0 text-white'>Discord</h5>
-                            <p className='mb-0 text-secondary'>Group chat, Friends & Gaming</p>
+                        <div className={toggleState === 3 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(3)}>
+                            Subscription & Paywall
                         </div>
-                        <div className='tab-icons'>
-                            <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
-                                <MdOutlineSaveAlt />
-                            </div>
-                            <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
-                                <BsThreeDots className='text-white' />
-                            </div>
+                        <div className={toggleState === 4 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(4)}>
+                            My Account & Profile
+                        </div>
+                        <div className={toggleState === 5 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(5)}>
+                            Charts
+                        </div>
+                        <div className={toggleState === 6 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(6)}>
+                            Welcome & get Started
+                        </div>
+                        <div className={toggleState === 7 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(7)}>
+                            Promotions & Rewards
+                        </div>
+                        <div className={toggleState === 8 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(8)}>
+                            Dashboard
+                        </div>
+                        <div className={toggleState === 9 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(9)}>
+                            Signup
+                        </div>
+                        <div className={toggleState === 10 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(10)}>
+                            Login
+                        </div>
+                        <div className={toggleState === 11 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(11)}>
+                            Walkthrough
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            <UITab toggleState={toggleState} />
+
         </div>
     )
 }
