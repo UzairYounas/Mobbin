@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BsFilterLeft } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
+import { Tooltip } from 'bootstrap/dist/js/bootstrap.esm.min.js'
+
 
 import screen1 from '../assets/images/screen1.png'
 import screen2 from '../assets/images/screen2.png'
@@ -19,6 +21,11 @@ function Elements() {
     const toggleTab = (index) => {
         setToggleState(index);
     }
+    useEffect(() => {
+        //init tooltip
+        Array.from(document.querySelectorAll('button[data-bs-toggle="tooltip"]'))
+            .forEach(tooltipNode => new Tooltip(tooltipNode))
+    });
     return (
         <div className='bg-1'>
             <Navbar />
@@ -32,21 +39,12 @@ function Elements() {
 
                 {/* =========== Scroll Bar ============== */}
 
-                {/* <div className="tab-overlay d-flex flex-column ">
-                    <div className="img-tab d-flex align-items-center gap-2 ">
-                        <img src={screen1} alt="" />
-                        <img src={screen2} alt="" />
-                        <img src={screen3} alt="" />
-                    </div>
-                    <p>Card contains content and actions about a single subject.</p>
-                </div> */}
-
 
                 <div className='position-relative btn-tab'>
                     <button onClick={() => filterTab(-300)} className='btn-5 d-767-none'><FaArrowLeft size={20} /></button>
                     <button onClick={() => filterTab(300)} className='btn-6 d-767-none'><FaArrowRight size={20} /></button>
                     <div id="filter-tab" className='d-flex gap-3'>
-                        <div className={toggleState === 1 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(1)}>
+                        <div className={toggleState === 1 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1'  : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(1)}>
                             All
                         </div>
                         <div className={toggleState === 2 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(2)}>
@@ -103,3 +101,4 @@ function Elements() {
 }
 
 export default Elements
+

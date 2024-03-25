@@ -11,4 +11,10 @@
         top: 16px;
         left: 50px;
     }
+    .nav{
+        height: 18%;
+    }
+    .nav-icons{
+        padding-top: 11px;
+    }
 }

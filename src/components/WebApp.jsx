@@ -3,6 +3,9 @@ import React, { useState, useRef } from 'react'
 import { BsFilterLeft } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
+import Navbar from './Common/Navbar';
+import Home from './Home';
+import WebTabs from './WebTabs';
 
 function WebApp() {
     const filterTab = (amount) => {
@@ -69,7 +72,7 @@ function WebApp() {
 
             </div>
 
-            {/* <UITab toggleState={toggleState} /> */}
+            <WebTabs toggleState={toggleState} />
 
         </div>
     )
