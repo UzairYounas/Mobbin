@@ -25,9 +25,9 @@ function Navbar() {
             <div className="col-lg-4 col-md-12 col-sm-12 col-12">
               <div className="d-flex align-items-center gap-4 nav-icons">
                 <a href="" className='text-white d-lg-block d-md-none d-sm-none d-none'><IoLogoTwitch className='h3' /></a>
-                <NavLink className="/">IOS</NavLink>
-                <NavLink className="/Apps">Android</NavLink>
-                <NavLink className='/Web'>Web</NavLink>
+                <NavLink to ="/">IOS</NavLink>
+                <NavLink to ="/android">Android</NavLink>
+                <NavLink to ='/Web'>Web</NavLink>
               </div>
             </div>
 

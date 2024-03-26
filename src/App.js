@@ -15,6 +15,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Test from './components/Test';
 
 const router = createBrowserRouter([
   {
@@ -44,7 +45,13 @@ const router = createBrowserRouter([
   {
     path: "/Web",
     element: <WebApp />
+  },
+  {
+    path: "/Test",
+    element: <Test />
   }
+
+
 ]);
 
 function App() {

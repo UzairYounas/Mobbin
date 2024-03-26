@@ -42,6 +42,7 @@ import bonsai from '../assets/images/bonsai.mp4'
 import bonsailogo from '../assets/images/bonsailogo.webp'
 
 function WebTabs({toggleState}) {
+
     const settings = {
         dots: true,
         infinite: true,
@@ -300,6 +301,40 @@ function WebTabs({toggleState}) {
                         </div>
                     </div>
 
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={etsy1} alt="etsy1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={etsy2} alt="etsy2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={etsy3} alt="etsy3.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={etsy4} alt="etsy4.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={etsylogo} alt="etsylogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Etsy</h5>
+                                <p className='mb-0 text-secondary'>Shop for handmade , vintage and Unique gifts</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -527,6 +562,31 @@ function WebTabs({toggleState}) {
                             <div className="d-flex  flex-column ps-2">
                                 <h5 className='mb-0 text-white'>Etsy</h5>
                                 <p className='mb-0 text-secondary'>Shop for handmade , vintage and Unique gifts</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={notion} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={notionlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Notion</h5>
+                                <p className='mb-0 text-secondary'>One WorkSpace, Every team.</p>
                             </div>
                             <div className='tab-icons'>
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
@@ -778,6 +838,40 @@ function WebTabs({toggleState}) {
                         </div>
                     </div>
 
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={gitbook1} alt="gitbook1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={gitbook2} alt="gitbook2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={gitbook3} alt="gitbook3.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={gitbook4} alt="gitbook4.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={gitbooklogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>GitBook</h5>
+                                <p className='mb-0 text-secondary'>Knowledge management for Technical teams</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -1005,6 +1099,31 @@ function WebTabs({toggleState}) {
                             <div className="d-flex  flex-column ps-2">
                                 <h5 className='mb-0 text-white'>GitBook</h5>
                                 <p className='mb-0 text-secondary'>Knowledge management for Technical teams</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={notion} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={notionlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Notion</h5>
+                                <p className='mb-0 text-secondary'>One WorkSpace, Every team.</p>
                             </div>
                             <div className='tab-icons'>
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
@@ -1256,6 +1375,31 @@ function WebTabs({toggleState}) {
                         </div>
                     </div>
 
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={bonsai} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={bonsailogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Bonsai</h5>
+                                <p className='mb-0 text-secondary'>Business & invoicing management solution</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -1483,6 +1627,40 @@ function WebTabs({toggleState}) {
                             <div className="d-flex  flex-column ps-2">
                                 <h5 className='mb-0 text-white'>Tines</h5>
                                 <p className='mb-0 text-secondary'>The smart , secure workflow builder</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={peerlist1} alt="peerlist1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={peerlist2} alt="peerlist2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={peerlist3} alt="peerlist3.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={peerlist4} alt="peerlist4.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={peerlistlogo} alt="peerlistlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Peerlist</h5>
+                                <p className='mb-0 text-secondary'>Professional Network for People in tech</p>
                             </div>
                             <div className='tab-icons'>
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
@@ -1734,6 +1912,40 @@ function WebTabs({toggleState}) {
                         </div>
                     </div>
 
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={peerlist1} alt="peerlist1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={peerlist2} alt="peerlist2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={peerlist3} alt="peerlist3.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={peerlist4} alt="peerlist4.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={peerlistlogo} alt="peerlistlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Peerlist</h5>
+                                <p className='mb-0 text-secondary'>Professional Network for People in tech</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -1961,6 +2173,31 @@ function WebTabs({toggleState}) {
                             <div className="d-flex  flex-column ps-2">
                                 <h5 className='mb-0 text-white'>Cosmos</h5>
                                 <p className='mb-0 text-secondary'>A new home for inspiration</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={notion} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={notionlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Notion</h5>
+                                <p className='mb-0 text-secondary'>One WorkSpace, Every team.</p>
                             </div>
                             <div className='tab-icons'>
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
@@ -2212,13 +2449,38 @@ function WebTabs({toggleState}) {
                         </div>
                     </div>
 
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={notion} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={notionlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Notion</h5>
+                                <p className='mb-0 text-secondary'>One WorkSpace, Every team.</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <div className={toggleState === 10 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
                 <div className="row">
 
-                <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
                         <div className='tinder'>
                             <Slider {...settings}>
                                 <div>
@@ -2439,6 +2701,31 @@ function WebTabs({toggleState}) {
                             <div className="d-flex  flex-column ps-2">
                                 <h5 className='mb-0 text-white'>Peerlist</h5>
                                 <p className='mb-0 text-secondary'>Professional Network for People in tech</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={notion} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={notionlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Notion</h5>
+                                <p className='mb-0 text-secondary'>One WorkSpace, Every team.</p>
                             </div>
                             <div className='tab-icons'>
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
@@ -2678,6 +2965,31 @@ function WebTabs({toggleState}) {
                             <div className="d-flex  flex-column ps-2">
                                 <h5 className='mb-0 text-white'>Notion</h5>
                                 <p className='mb-0 text-secondary'>One WorkSpace, Every team.</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={cosmos} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={cosmoslogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Cosmos</h5>
+                                <p className='mb-0 text-secondary'>A new home for inspiration</p>
                             </div>
                             <div className='tab-icons'>
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">

@@ -18,3 +18,13 @@
         padding-top: 11px;
     }
 }
+
+/* @media (max-width: 477px) {
+    .tinder{
+        padding: 16px 16px 16px 16px;
+        border-radius: 15px;
+    }
+    .tinder img, .tinder video{
+        border-radius: 12px;
+    }
+} */

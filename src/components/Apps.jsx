@@ -10,6 +10,7 @@ import Navbar from './Common/Navbar';
 function Apps() {
     const filterTab = (amount) => {
         document.getElementById('filter-tab').scrollBy({ left: amount, behavior: 'smooth' });
+        console.log('success',)
     };
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -68,11 +69,19 @@ function Apps() {
                         <div className={toggleState === 11 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(11)}>
                             Walkthrough
                         </div>
+                        <div className={toggleState === 11 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(11)}>
+                            Walkthrough
+                        </div>
+                        <div className={toggleState === 11 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(11)}>
+                            Walkthrough
+                        </div>
+                        <div className={toggleState === 11 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(11)}>
+                            Walkthrough
+                        </div>
                     </div>
                 </div>
 
             </div>
-
             <UITab toggleState={toggleState} />
 
         </div>

@@ -123,10 +123,10 @@ header{
 
 .sidebar{
     position: fixed;
-    left: 10px;
-    top: 0;
+    right: 33px;
+    top: 72px;
     height: 88vh;
-    transform: translate(1077px, 74px);
+    /* transform: translate(1077px, 74px); */
     min-width: max-content;
     background-color: #1E1E1E;
     padding: 16px;
@@ -247,9 +247,9 @@ header{
     outline: none;
     border: none;
     background-color: #2e2e2edc;
-    border-radius: 40px;
-    width: 40px;
-    height: 40px;
+    border-radius: 13px;
+    width: 35px;
+    height: 35px;
     color: #ffffff;
 }
 .btn-5{
@@ -275,23 +275,31 @@ header{
 .border:hover{
     background-color: #1E1E1E;
 }
+#filter-tab div{
+    min-width: max-content;
+}
 .active-border{
     background-color: #F0F0F0;
     color: #111111;
 }
 #filter-tab{
-    width: max-content;
+    /* width: max-content; */
+    overflow-x: scroll
 }
-.btn-tab{
-    overflow-x: scroll;
-}
-.btn-tab::-webkit-scrollbar {
+#filter-tab::-webkit-scrollbar {
     display: none;
 }
+.btn-tab{
+    /* overflow-x: scroll; */
+    overflow-y: hidden;
+}
+/* .btn-tab::-webkit-scrollbar {
+    overflow-x: auto;
+} */
 
 /* =================== Apps Design ====================== */
 .tinder{
-    min-width: 243px;
+    /* min-width: 243px; */
     background-color: #222222;
     padding: 24px 28px 28px 28px;
     border-radius: 28px;

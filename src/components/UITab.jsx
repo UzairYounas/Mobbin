@@ -3833,7 +3833,6 @@ function UITab({toggleState}) {
                         </div>
                     </div>
 
-
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
                         <div className='tinder'>
                             <Slider {...settings}>
