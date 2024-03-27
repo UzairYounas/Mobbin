@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BsFilterLeft } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa6";
@@ -6,8 +7,13 @@ import { FaArrowLeft } from "react-icons/fa6";
 import Home from './Home';
 import UITab from './UITab';
 import Navbar from './Common/Navbar';
+import ModalBox from './ModalBox';
 
 function Apps() {
+    const [locationModal, setLocationModal] = useState(false);
+
+
+
     const filterTab = (amount) => {
         document.getElementById('filter-tab').scrollBy({ left: amount, behavior: 'smooth' });
         console.log('success',)
@@ -23,11 +29,13 @@ function Apps() {
             <Home />
 
             <div className="container-fluid p-l-32 p-r-32 d-flex flex-col align-items-center gap-y-24 gap-3">
-                <button className='d-flex align-items-center btn-4 gap-2'>
+                <button className='d-flex align-items-center btn-4 gap-2' onClick={() => setLocationModal(!locationModal)}>
                     <BsFilterLeft />
                     Filters
                 </button>
                 <div className='vr-1 m-0'></div>
+
+                <ModalBox locationModal={locationModal} setLocationModal={setLocationModal} />
 
                 {/* =========== Scroll Bar ============== */}
 

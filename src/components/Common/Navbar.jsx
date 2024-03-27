@@ -18,7 +18,7 @@ function Navbar() {
   }
   return (
     <header>
-      <div className="nav fixed-top" style={{backgroundColor: "#111111"}}>
+      <div className="nav" style={{backgroundColor: "#111111"}}>
         <div className="container-fluid p-l-32 pr-32">
           <div className="row py-2 d-flex align-items-center">
 

@@ -23,6 +23,14 @@ body::-webkit-scrollbar-thumb,
 .sidebar::-webkit-scrollbar-thumb{
     background-color: #686868;
 }
+.tren-elem::-webkit-scrollbar{
+    display: block;
+    width: 6px;
+}
+.tren-elem::-webkit-scrollbar-thumb{
+    background-color: #515151;
+    border-radius: 15px;
+}
 .bg-1{
     background-color: #111111;
 }
@@ -37,6 +45,13 @@ header{
 }
 .p-r-32{
     padding-right: 32px !important;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
 }
 .nav-icons{
     display: flex;
@@ -366,6 +381,113 @@ header{
     display: block !important;
 }
 
+/* ============== Modal Box Design ============ */
+.body-bg{
+    background-color: #1E1E1E;
+    border-radius: 10px;
+}
+.modal{
+    height: 107vh !important;
+}
+.search-input .text-white{
+    top: 15px;
+    font-size: 22px;
+    left: 11px;
+}
+.search-input input{
+    color: #F0F0F0;
+    width: 100%;
+    background-color: #2E2E2E;
+    padding: 12px 0 12px 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-family: BasierSquare;
+    font-weight: 700;
+    font-size: 18px;
+}
+.modal-btn{
+    padding: 12px;
+    cursor: pointer;
+    font-family: BasierSquare;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F0F0F0;
+    border-radius: 15px;
+}
+.modal-btn:hover{
+    background-color: #2E2E2E;
+}
+.active-modal-btn{
+    background-color: #2E2E2E;
+}
+.btn-10{
+    outline: none;
+    border: .3px solid #F0F0F0;
+    border-radius: 14px;
+    background-color: #1E1E1E;
+    padding: 5px 10px;
+}
+.tren-elem{
+    overflow-y: scroll;
+    height: 78vh;
+}
+.category-data{
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+.category-data span{
+    color: #F0F0F0;
+    font-family: BasierSquare;
+    font-weight: 700;
+    font-size: 15px;
+}
+.category-data:hover{
+    background-color: #2E2E2E;
+}
+  
+.image-wrapper img {
+    display: block;
+    width: 64px;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Smooth transition when image moves */
+  }
+  
+  .hover-text {
+    display: none;
+    position: absolute;
+    bottom: -20px; /* Adjust distance from the bottom */
+    left: 50%;
+    color: #F0F0F0;
+    transform: translateX(-50%);
+  }
+  
+  .image-wrapper:hover img {
+    transform: translateY(-10px);
+  }
+  .image-wrapper:hover .hover-text{
+    display: block;
+    bottom: -10px;
+  }
+  .singup-data{
+    background-color: #2E2E2E;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+  }
+  .singup-data img[alt="phone1.png"]{
+    width: 55px;
+    /* position: absolute; */
+    bottom: 0;
+    right: 20px;
+  }
+  .singup-data img[alt="phone2.png"]{
+    width: 55px;
+    /* position: absolute; */
+    bottom: 0;
+    right: 60px;
+  }
+
 /* ========== Slick Crausol Design ========== */
 
 .slick-dots li.slick-active button:before{
@@ -535,3 +657,4 @@ header{
 .flows-data:hover .head1{
     text-decoration: underline;
 }
+  
