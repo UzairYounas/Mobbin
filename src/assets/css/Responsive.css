@@ -12,19 +12,28 @@
         left: 50px;
     }
     .nav{
-        height: 18%;
+        height: 20%;
     }
     .nav-icons{
         padding-top: 11px;
     }
 }
-
-/* @media (max-width: 477px) {
-    .tinder{
-        padding: 16px 16px 16px 16px;
-        border-radius: 15px;
+@media (max-width: 767px) {
+    .modal-tabs{
+        display: none;
     }
-    .tinder img, .tinder video{
-        border-radius: 12px;
+    .btn-5,
+    .btn-6{
+        display: none;
     }
-} */
+}
+@media (min-width: 576px) {
+    .modal-dialog{
+        max-width: 800px !important;
+    }
+}
+@media (max-width: 520px) {
+    .image-wrapper img{
+        width: 50px;
+    }
+}

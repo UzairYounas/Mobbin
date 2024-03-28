@@ -15,11 +15,11 @@ import spotifylogo from '../assets/images/Spotifylogo.webp'
 import wiselogo from '../assets/images/Wiselogo.webp'
 import tinderlogo from '../assets/images/tinderlogo.webp'
 import Dudolingologo from '../assets/images/Duolingologo.webp'
-// import signup1 from '../assets/images/signup1.png'
-// import signup2 from '../assets/images/signup2.png'
-// import login1 from '../assets/images/login1.png'
-// import login2 from '../assets/images/login2.png'
-// import { FaRegCompass } from "react-icons/fa";
+
+import { FaRegCompass } from "react-icons/fa";
+import { LuPencil } from "react-icons/lu";
+import { IoArrowForward } from "react-icons/io5";
+import { LuFilter } from "react-icons/lu";
 
 function ModalBox({locationModal, setLocationModal}) {
     
@@ -41,7 +41,7 @@ function ModalBox({locationModal, setLocationModal}) {
                     <div className="container-fluid">
                         <div className="row">
 
-                            <div className="col-md-4 pt-4">
+                            <div className="col-lg-4 col-md-4 col-sm-4 col-4 pt-4 modal-tabs">
                                 <div className={toggleState === 1 ? 'modal-btn active-modal-btn d-flex align-items-center gap-3' : 'modal-btn d-flex align-items-center gap-3'}onClick={() => toggleTab(1)}>
                                     <button className='btn-10'>
                                         <BsStars style={{ color: "#F0F0F0" }} />
@@ -75,9 +75,9 @@ function ModalBox({locationModal, setLocationModal}) {
 
                             </div>
 
-                            <div className={toggleState === 1 ? 'd-block col-md-8 pt-4' : 'd-none col-md-8 pt-4'}>
+                            <div className={toggleState === 1 ? 'd-block col-lg-8 col-md-8 col-sm128 col-12 pt-4' : 'd-none col-lg-8 col-md-8 col-sm-8 col-8 pt-4'}>
                             <p style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>Apps</p>
-                                <div className="d-flex align-items-center gap-2">
+                                <div className="d-flex flex-wrap align-items-center gap-2">
                                     <div className="image-wrapper position-relative">
                                         <img src={Revolutlogo} alt="revolut.png" />
                                         <div className="hover-text">Revolut</div>
@@ -107,28 +107,55 @@ function ModalBox({locationModal, setLocationModal}) {
                                         <div className="hover-text">Dudolingo</div>
                                     </div>
                                 </div>
+                                
                             <p className='pt-3' style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>UI Elements</p>
 
                                 <div className="d-flex flex-wrap align-items-center gap-2">
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'> card</div>                                
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'> Toast & SnackBar</div>                                
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'> List</div>                                
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'>Banner & Alert</div>                                
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'>Dialog</div>                                
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'>Table</div>                                
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'>Button</div>                                
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'>Progress Indicator</div>                                
-                                    <div className='border border-secondary rounded rounded-5 px-2 py-1'>Top Bar</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'> card</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'> Toast & SnackBar</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'> List</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>Banner & Alert</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>Dialog</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>Table</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>Button</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>Progress Indicator</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>Top Bar</div>                                
                                 </div>
 
                                 <p className='pt-3' style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>Flows</p>
-                                {/* <div className='d-flex flex-column justify-content-between'>
-                                    Onboarding
-                                    <FaRegCompass/>
-                                </div> */}
+                               
+                               <div className="d-flex align-items-center gap-2">
+
+                                    <div className='flow-data d-flex flex-column gap-5'>
+                                        <p className='para1'>Onboarding</p>
+                                        <FaRegCompass style={{color: "#F0F0F0"}}/>
+                                    </div>
+                                    <div className='flow-data d-md-flex d-sm-flex d-none flex-column gap-5'>
+                                        <p className='para1'>Filtering & sorting</p>
+                                        <LuFilter style={{color: "#F0F0F0"}}/>
+                                    </div>
+                                    <div className='flow-data d-flex flex-column gap-5'>
+                                        <p className='para1'>Edit Profile</p>
+                                        <LuPencil style={{color: "#F0F0F0"}}/>
+                                    </div>
+                                    <div className='flow-data d-flex flex-column gap-5'>
+                                        <p className='para1'>Loging in</p>
+                                        <IoArrowForward style={{color: "#F0F0F0"}}/>
+                                    </div>
+                               </div>
+
+                               <p className='pt-3' style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>Text in Screenshot</p>
+
+                               <div className="d-flex flex-wrap align-items-center gap-2">
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'> "Forgot Password"</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>"Upgrade"</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>"Bluetooth</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>"Payment"</div>                                
+                                    <div className='bg-2 border-secondary rounded rounded-5 px-2 py-1'>"Confirmed"</div>                               
+                                </div>
 
                             </div>
-                            <div className={toggleState === 2 ? 'd-block col-md-8 pt-4' : 'd-none col-md-8 pt-4'}>
+                            <div className={toggleState === 2 ? 'd-block col-lg-8 col-md-8 col-sm-12 col-12 pt-4' : 'd-none col-lg-8 col-md-8 col-sm-8 col-8 pt-4'}>
                                 <div className="tren-elem">
                                     <span style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>Categories</span>
                                     <div className="category-data d-flex align-items-center justify-content-between mt-2">
@@ -191,7 +218,7 @@ function ModalBox({locationModal, setLocationModal}) {
                                 </div>
 
                             </div>
-                            <div className={toggleState === 3 ? 'd-block col-md-8 pt-4' : 'd-none col-md-8 pt-4'}>
+                            <div className={toggleState === 3 ? 'd-block col-lg-8 col-md-8 col-sm-12 col-12 pt-4' : 'd-none col-lg-8 col-md-8 col-sm-8 col-8 pt-4'}>
                                 <div className="tren-elem">
                                     <span style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>New User Experience</span>
                                     <div className="category-data d-flex align-items-center justify-content-between mt-2">
@@ -272,7 +299,7 @@ function ModalBox({locationModal, setLocationModal}) {
                                 </div>
 
                             </div>
-                            <div className={toggleState === 4 ? 'd-block col-md-8 pt-4' : 'd-none col-md-8 pt-4'}>
+                            <div className={toggleState === 4 ? 'd-block col-lg-8 col-md-8 col-sm-12 col-12 pt-4' : 'd-none col-lg-8 col-md-8 col-sm-8 col-8 pt-4'}>
                                 <div className="tren-elem">
                                     <span style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>Control</span>
                                     <div className="category-data d-flex align-items-center justify-content-between mt-2">
@@ -361,7 +388,7 @@ function ModalBox({locationModal, setLocationModal}) {
                                 </div>
 
                             </div>
-                            <div className={toggleState === 5 ? 'd-block col-md-8 pt-4' : 'd-none col-md-8 pt-4'}>
+                            <div className={toggleState === 5 ? 'd-block col-lg-8 col-md-8 col-sm-12 col-12 pt-4' : 'd-none col-lg-8 col-md-8 col-sm-8 col-8 pt-4'}>
                                 <div className="tren-elem">
                                     <span style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>New User Experience</span>
                                     <div className="category-data d-flex align-items-center justify-content-between mt-2">

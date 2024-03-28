@@ -141,7 +141,6 @@ header{
     right: 33px;
     top: 72px;
     height: 88vh;
-    /* transform: translate(1077px, 74px); */
     min-width: max-content;
     background-color: #1E1E1E;
     padding: 16px;
@@ -308,13 +307,9 @@ header{
     /* overflow-x: scroll; */
     overflow-y: hidden;
 }
-/* .btn-tab::-webkit-scrollbar {
-    overflow-x: auto;
-} */
 
 /* =================== Apps Design ====================== */
 .tinder{
-    /* min-width: 243px; */
     background-color: #222222;
     padding: 24px 28px 28px 28px;
     border-radius: 28px;
@@ -382,7 +377,7 @@ header{
 }
 
 /* ============== Modal Box Design ============ */
-.body-bg{
+.modal-content{
     background-color: #1E1E1E;
     border-radius: 10px;
 }
@@ -444,19 +439,18 @@ header{
 }
 .category-data:hover{
     background-color: #2E2E2E;
-}
-  
+} 
 .image-wrapper img {
     display: block;
-    width: 64px;
+    width: 60px;
     border-radius: 15px;
-    transition: transform 0.3s ease; /* Smooth transition when image moves */
+    transition: transform 0.3s ease;
   }
   
   .hover-text {
     display: none;
     position: absolute;
-    bottom: -20px; /* Adjust distance from the bottom */
+    bottom: -20px;
     left: 50%;
     color: #F0F0F0;
     transform: translateX(-50%);
@@ -475,17 +469,31 @@ header{
     padding-right: 12px;
     border-radius: 10px;
   }
-  .singup-data img[alt="phone1.png"]{
-    width: 55px;
-    /* position: absolute; */
-    bottom: 0;
-    right: 20px;
+  .flow-data{
+    background-color: #2E2E2E;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
   }
-  .singup-data img[alt="phone2.png"]{
-    width: 55px;
-    /* position: absolute; */
-    bottom: 0;
-    right: 60px;
+  .flow-data:hover{
+    background-color: #3D3D3D;
+  }
+  .para1{
+    font-family: BasierSquare;
+    font-weight: 700;
+    color: #F0F0F0;
+    margin-bottom: 0;
+  }
+  .bg-2{
+    color: #F0F0F0;
+    cursor: pointer;
+    font-family: BasierSquare;
+    font-weight: 600;
+    background-color: #2E2E2E;
+    transition: 0.2s;
+  }
+  .bg-2:hover{
+    background-color: #3D3D3D;
   }
 
 /* ========== Slick Crausol Design ========== */

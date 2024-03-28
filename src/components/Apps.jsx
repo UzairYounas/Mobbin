@@ -29,11 +29,11 @@ function Apps() {
             <Home />
 
             <div className="container-fluid p-l-32 p-r-32 d-flex flex-col align-items-center gap-y-24 gap-3">
-                <button className='d-flex align-items-center btn-4 gap-2' onClick={() => setLocationModal(!locationModal)}>
+                <button className='d-md-flex align-items-center d-sm-none d-none btn-4 gap-2' onClick={() => setLocationModal(!locationModal)}>
                     <BsFilterLeft />
                     Filters
                 </button>
-                <div className='vr-1 m-0'></div>
+                <div className='vr-1 m-0 d-md-block d-sm-none d-none '></div>
 
                 <ModalBox locationModal={locationModal} setLocationModal={setLocationModal} />
 
@@ -41,8 +41,8 @@ function Apps() {
 
 
                 <div className='position-relative btn-tab'>
-                    <button onClick={() => filterTab(-300)} className='btn-5 d-767-none'><FaArrowLeft size={20} /></button>
-                    <button onClick={() => filterTab(300)} className='btn-6 d-767-none'><FaArrowRight size={20} /></button>
+                    <button onClick={() => filterTab(-300)} className='btn-5'><FaArrowLeft size={20} /></button>
+                    <button onClick={() => filterTab(300)} className='btn-6'><FaArrowRight size={20} /></button>
                     <div id="filter-tab" className='d-flex gap-3'>
                         <div className={toggleState === 1 ? 'border active-border border-secondary rounded rounded-5 px-2 py-1' : 'border border-secondary rounded rounded-5 px-2 py-1'} onClick={() => toggleTab(1)}>
                             All
