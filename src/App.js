@@ -8,6 +8,7 @@ import Elements from './components/Elements';
 import Flows from './components/Flows';
 import Android from './Pages/Android';
 import WebApp from './components/WebApp';
+import Pricing from './Pages/Pricing';
 
 import {
   createBrowserRouter,
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/Web",
     element: <WebApp />
+  },
+  {
+    path: "/pricing",
+    element: <Pricing />
   }
 
 ]);

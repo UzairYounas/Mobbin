@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react'
+import { FaLink } from "react-icons/fa6";
+import { CiImageOn } from "react-icons/ci";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -58,6 +60,8 @@ import Metaquestlogo from '../assets/images/MetaQuestLogo.webp'
 import { MdOutlineSaveAlt } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 
+import { FaDownload } from "react-icons/fa6";
+
 function UITab({toggleState}) {
     const settings = {
         dots: true,
@@ -79,10 +83,16 @@ function UITab({toggleState}) {
         videoRef.current.pause();
         videoRef.current.currentTime = 0;
     };
+    
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+        setIsVisible(!isVisible);
+    };
 
   return (
     <>
-            <div className={toggleState === 1 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 1 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
                 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -109,9 +119,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -436,7 +458,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 2 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 2 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -790,7 +812,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 3 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 3 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -1145,7 +1167,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 4 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 4 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
                 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -1499,7 +1521,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 5 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 5 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -1853,7 +1875,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 6 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 6 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
 
                 
@@ -2208,7 +2230,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
             
-            <div className={toggleState === 7 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 7 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
                 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -2562,7 +2584,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 8 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 8 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
                 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -2916,7 +2938,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 9 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 9 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -3271,7 +3293,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 10 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 10 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -3625,7 +3647,7 @@ function UITab({toggleState}) {
                 </div>
             </div>
 
-            <div className={toggleState === 11 ? "d-block container-fluid mt-5 p-l-32 p-r-32" : "d-none container-fluid mt-5 p-l-32 p-r-32"}>
+            <div className={toggleState === 11 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">
 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
@@ -3978,6 +4000,715 @@ function UITab({toggleState}) {
 
                 </div>
             </div>
+
+            <div className={toggleState === 12 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
+                <div className="row">
+                
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={tinder1} alt="tinder1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={tinder2} alt="tinder2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={tinder3} alt="tinder3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={tinderlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Tinder</h5>
+                                <p className='mb-0 text-secondary'>Meet new People & Date Singles</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={betterment1} alt="betterment1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={betterment2} alt="betterment2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={betterment3} alt="betterment3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={bettermentlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Betterment</h5>
+                                <p className='mb-0 text-secondary'>Investments & cash accounts</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={iOSApps} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={bloom} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Bloom</h5>
+                                <p className='mb-0 text-secondary'>Mental Health & Self Care</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={discord1} alt="discord1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={discord2} alt="discord2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={discord3} alt="discord3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={discordlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Discord</h5>
+                                <p className='mb-0 text-secondary'>Group chat, Friends & Gaming</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={Applesports} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Applesportslogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Apple Sports</h5>
+                                <p className='mb-0 text-secondary'>Live Scores and stats</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={stoic1} alt="stoic1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={stoic2} alt="stoic2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={stoic3} alt="stoic3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={stoiclogo} alt="stoiclogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Stoic</h5>
+                                <p className='mb-0 text-secondary'>Diary , Mood & Health Tracker</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={Bloomberg1} alt="Bloomberg1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Bloomberg2} alt="Bloomberg2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Bloomberg3} alt="Bloomberg3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Bloomberglogo} alt="Bloomberglogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Blooomberg</h5>
+                                <p className='mb-0 text-secondary'>Stock Market & world Finance</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={Metaquest} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Metaquestlogo} alt="Metaquestlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Meta Quest</h5>
+                                <p className='mb-0 text-secondary'>Expand your world</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={Premier1} alt="Premier1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Premier2} alt="Premier2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Premier3} alt="Premier3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Premierlogo} alt="Premierogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Premier Logo</h5>
+                                <p className='mb-0 text-secondary'>Football news , Score & Fixtures</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={singapor1} alt="singapor1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={singapor2} alt="singapor2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={singapor3} alt="singapor3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={singaporlogo} alt="singaporlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Singapor Airlines</h5>
+                                <p className='mb-0 text-secondary'>A Great way to Fly</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={Angi1} alt="Angi1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Angi2} alt="Angi2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Angi3} alt="Angi3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Angilogo} alt="Angilogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Angi</h5>
+                                <p className='mb-0 text-secondary'>House Maintainance</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={otter} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={otterlogo} alt="otterlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Otter.ai</h5>
+                                <p className='mb-0 text-secondary'>Work from home learaning</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className={toggleState === 13 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
+                <div className="row">
+                
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={tinder1} alt="tinder1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={tinder2} alt="tinder2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={tinder3} alt="tinder3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={tinderlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Tinder</h5>
+                                <p className='mb-0 text-secondary'>Meet new People & Date Singles</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={betterment1} alt="betterment1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={betterment2} alt="betterment2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={betterment3} alt="betterment3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={bettermentlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Betterment</h5>
+                                <p className='mb-0 text-secondary'>Investments & cash accounts</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={iOSApps} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={bloom} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Bloom</h5>
+                                <p className='mb-0 text-secondary'>Mental Health & Self Care</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={discord1} alt="discord1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={discord2} alt="discord2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={discord3} alt="discord3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={discordlogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Discord</h5>
+                                <p className='mb-0 text-secondary'>Group chat, Friends & Gaming</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={singapor1} alt="singapor1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={singapor2} alt="singapor2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={singapor3} alt="singapor3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={singaporlogo} alt="singaporlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Singapor Airlines</h5>
+                                <p className='mb-0 text-secondary'>A Great way to Fly</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={Applesports} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Applesportslogo} alt="tinderlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Apple Sports</h5>
+                                <p className='mb-0 text-secondary'>Live Scores and stats</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={stoic1} alt="stoic1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={stoic2} alt="stoic2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={stoic3} alt="stoic3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={stoiclogo} alt="stoiclogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Stoic</h5>
+                                <p className='mb-0 text-secondary'>Diary , Mood & Health Tracker</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={Bloomberg1} alt="Bloomberg1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Bloomberg2} alt="Bloomberg2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Bloomberg3} alt="Bloomberg3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Bloomberglogo} alt="Bloomberglogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Blooomberg</h5>
+                                <p className='mb-0 text-secondary'>Stock Market & world Finance</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={Metaquest} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Metaquestlogo} alt="Metaquestlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Meta Quest</h5>
+                                <p className='mb-0 text-secondary'>Expand your world</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={Premier1} alt="Premier1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Premier2} alt="Premier2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Premier3} alt="Premier3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Premierlogo} alt="Premierogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Premier Logo</h5>
+                                <p className='mb-0 text-secondary'>Football news , Score & Fixtures</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <Slider {...settings}>
+                                <div>
+                                    <img className='w-100' src={Angi1} alt="Angi1.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Angi2} alt="Angi2.png" />
+                                </div>
+                                <div className=''>
+                                    <img className='w-100' src={Angi3} alt="Angi3.png" />
+                                </div>
+                            </Slider>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={Angilogo} alt="Angilogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Angi</h5>
+                                <p className='mb-0 text-secondary'>House Maintainance</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4 col-sm-6 app-div">
+                        <div className='tinder'>
+                            <video loop onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                ref={videoRef} className='w-100'>
+                                <source src={otter} type="video/mp4" />
+                            </video>
+                        </div>
+                        <div className="tinder-data position-relative d-flex align-content-center pt-3 pb-4">
+                            <img src={otterlogo} alt="otterlogo.png" />
+                            <div className="d-flex  flex-column ps-2">
+                                <h5 className='mb-0 text-white'>Otter.ai</h5>
+                                <p className='mb-0 text-secondary'>Work from home learaning</p>
+                            </div>
+                            <div className='tab-icons'>
+                                <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <MdOutlineSaveAlt />
+                                </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
     </>
   )
 }

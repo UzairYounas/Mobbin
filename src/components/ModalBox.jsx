@@ -41,7 +41,7 @@ function ModalBox({locationModal, setLocationModal}) {
                     <div className="container-fluid">
                         <div className="row">
 
-                            <div className="col-lg-4 col-md-4 col-sm-4 col-4 pt-4 modal-tabs">
+                            <div className="col-lg-4 col-md-4 col-sm-4 col-4 pt-4 modal-tabs d-flex flex-column gap-1">
                                 <div className={toggleState === 1 ? 'modal-btn active-modal-btn d-flex align-items-center gap-3' : 'modal-btn d-flex align-items-center gap-3'}onClick={() => toggleTab(1)}>
                                     <button className='btn-10'>
                                         <BsStars style={{ color: "#F0F0F0" }} />
@@ -78,31 +78,31 @@ function ModalBox({locationModal, setLocationModal}) {
                             <div className={toggleState === 1 ? 'd-block col-lg-8 col-md-8 col-sm128 col-12 pt-4' : 'd-none col-lg-8 col-md-8 col-sm-8 col-8 pt-4'}>
                             <p style={{ color: "#989898", fontFamily: "BasierSquare", fontWeight: "700", fontSize: "14px" }}>Apps</p>
                                 <div className="d-flex flex-wrap align-items-center gap-2">
-                                    <div className="image-wrapper position-relative">
+                                    <div className="image-wrapper position-relative" style={{cursor: "pointer"}}>
                                         <img src={Revolutlogo} alt="revolut.png" />
                                         <div className="hover-text">Revolut</div>
                                     </div>
-                                    <div className="image-wrapper position-relative">
+                                    <div className="image-wrapper position-relative"  style={{cursor: "pointer"}}>
                                         <img src={Airbnblogo} alt="airbnb.png" />
                                         <div className="hover-text">AirBnb</div>
                                     </div>
-                                    <div className="image-wrapper position-relative">
+                                    <div className="image-wrapper position-relative"  style={{cursor: "pointer"}}>
                                         <img src={Ubberlogo} alt="ubber.png" />
                                         <div className="hover-text">Uber</div>
                                     </div>
-                                    <div className="image-wrapper position-relative">
+                                    <div className="image-wrapper position-relative"  style={{cursor: "pointer"}}>
                                         <img src={spotifylogo} alt="spotify.png" />
                                         <div className="hover-text">Spotify</div>
                                     </div>
-                                    <div className="image-wrapper position-relative">
+                                    <div className="image-wrapper position-relative"  style={{cursor: "pointer"}}>
                                         <img src={wiselogo} alt="wise.png" />
                                         <div className="hover-text">Wise</div>
                                     </div>
-                                    <div className="image-wrapper position-relative">
+                                    <div className="image-wrapper position-relative"  style={{cursor: "pointer"}}>
                                         <img src={tinderlogo} alt="tinder.png" />
                                         <div className="hover-text">Tinder</div>
                                     </div>
-                                    <div className="image-wrapper position-relative">
+                                    <div className="image-wrapper position-relative"  style={{cursor: "pointer"}}>
                                         <img src={Dudolingologo} alt="Dudolingo.png" />
                                         <div className="hover-text">Dudolingo</div>
                                     </div>

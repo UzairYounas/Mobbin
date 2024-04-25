@@ -3,6 +3,7 @@ import { HiDotsHorizontal } from "react-icons/hi";
 import { CiImageOn } from "react-icons/ci";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaLink } from "react-icons/fa6";
+import UITab from './UITab';
 
 function Overlay() {
     const [isVisible, setIsVisible] = useState(false);
@@ -37,6 +38,7 @@ function Overlay() {
                 <button className='btn-7'>Save</button>
             </div>
         </div>
+
     )
 }
 

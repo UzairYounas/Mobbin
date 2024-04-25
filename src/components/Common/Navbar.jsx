@@ -27,7 +27,7 @@ function Navbar() {
                 <NavLink to ="/">
                   <IoLogoTwitch className='h3 text-white d-lg-block d-md-none d-sm-none d-none' />
                 </NavLink>
-                <NavLink to ="/">IOS</NavLink>
+                <NavLink to ="/">iOS</NavLink>
                 <NavLink to ="/android">Android</NavLink>
                 <NavLink to ='/Web'>Web</NavLink>
               </div>
@@ -100,7 +100,7 @@ function Navbar() {
             <hr className='hr-2' />
 
             <div className='theme-item d-flex flex-column'>
-              <p className='collection mb-0'>Pricing</p>
+              <Link to='/pricing' className='collection mb-0 text-decoration-none'>Pricing</Link>
               <p className='collection mb-0'>Changelog</p>
               <p className='collection mb-0'>Blog</p>
               <div className='collection d-flex align-items-center justify-content-between'>

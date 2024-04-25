@@ -7,7 +7,7 @@ function Home() {
         <div className='home bg-1'>
             <div className="container-fluid p-l-32 p-r-32">
                 <h1>Discover </h1>
-                <div className="d-flex gap-x-24 py-4">
+                <div className="d-flex gap-x-24 py-3">
                 <NavLink to="/Apps" > Apps</NavLink>
                 <NavLink to="/Screens" > Screens</NavLink>
                 <NavLink to="/Elements" > UI Elements</NavLink>

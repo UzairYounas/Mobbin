@@ -59,24 +59,31 @@ header{
     gap: 16px;
 }
 .nav-icons a,
-.home .py-4 a{
+.home .py-3 a{
     color: #616161;
     text-decoration: none;
     font-family: BasierSquare;
     transition: 0.2s;
 }
 .nav-icons a:hover,
-.home .py-4 a:hover{
+.home .py-3 a:hover{
     color: #F0F0F0;
 }
 .nav-icons .active,
-.home .py-4 .active{
+.home .py-3 .active{
     color: #F0F0F0;
 }
+.home a:hover {
+    border-bottom: 3px solid #F0F0F0;
+  }
+  
+.home a.active {
+    border-bottom: 3px solid #F0F0F0;
+  }
 .search-bar input{
     width: 100%;
-    padding: 15px 15px 15px 50px;
-    background-color: #3D3D3D;
+    padding: 11px 10px 11px 50px;
+    background-color: #2E2E2E;
     border: none;
     border-radius: 40px;
     font-size: 16px;
@@ -86,8 +93,8 @@ header{
     border-color: #3D3D3D;
 }
 .search-bar .icon{
-    top: 17px;
-    left: 20px;
+    top: 13px;
+    left: 18px;
     font-size: 20px;
 }
 .btn-1{
@@ -229,7 +236,8 @@ header{
 .home h1{
     color: #F0F0F0;
     font-family: BasierSquare;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 43px;
 }
 .gap-x-24{
     column-gap: 24px;
@@ -296,6 +304,9 @@ header{
     background-color: #F0F0F0;
     color: #111111;
 }
+.active-border:hover{
+    background-color: #F0F0F0;
+}
 #filter-tab{
     /* width: max-content; */
     overflow-x: scroll
@@ -306,6 +317,11 @@ header{
 .btn-tab{
     /* overflow-x: scroll; */
     overflow-y: hidden;
+}
+.blur{
+    position: absolute;
+    width: 50%;
+    background-color: red;
 }
 
 /* =================== Apps Design ====================== */
@@ -360,7 +376,7 @@ header{
     background-color: #3d3d3de3;
 }
 .tab-icons{
-    display: none;
+    /* display: none; */
     transition: 0.4s;
 }
 .slick-dots,
@@ -378,7 +394,7 @@ header{
 
 /* ============== Modal Box Design ============ */
 .modal-content{
-    background-color: #1E1E1E;
+    background-color: #1E1E1E !important;
     border-radius: 10px;
 }
 .modal{
@@ -547,6 +563,15 @@ header{
     height: 146px;
     background-color: #1e1e1e;
 }
+.dotspopup{
+    position: absolute;
+    bottom: 70px;
+    left: 63px;
+    border-radius: 20px;
+    width: 240px;
+    height: 90px;
+    background-color: #1e1e1e;
+}
 .popup-data{
     color: #F0F0F0;
     font-family: BasierSquare;
@@ -665,4 +690,217 @@ header{
 .flows-data:hover .head1{
     text-decoration: underline;
 }
-  
+
+/* ================= Pricing Page Design =============== */
+
+.heading{
+    margin-top: 4rem;
+    padding-top: 100px;
+}
+.tab-bg{
+    background-color: #2E2E2E;
+    border-radius: 30px;
+    width: 286px;
+    padding: 6px;
+}  
+.tab{
+    border-radius: 20px;
+    color: hsl(0, 0%, 59.21%);
+    padding: 5px 10px;
+    font-family: BasierSquare;
+    font-weight: 400;
+    cursor: pointer;
+}
+.active-tab{
+    background-color: #111111;
+    color: #F0F0F0;
+}
+.tit1{
+    font-family: BasierSquare;
+    font-size: 79px;
+    font-weight: 600;
+    color: #F0F0F0;
+    line-height: 84px;
+    letter-spacing: -2px;
+}
+.tit2{
+    font-family: BasierSquare;
+    font-size: 20px;
+    font-weight: 400;
+    color: #949090;
+    line-height: 28px;
+    padding: 0px 275px 0px 275px;
+}
+
+/* =========== Pricing Tabs Design ============ */
+.price-tab{
+    border: 1px solid;
+    border-color: hsl(0, 0%, 23.92%);
+    padding: 32px;
+    border-radius: 32px;
+    width: 376px;
+}
+.tit3{
+    font-family: BasierSquare;
+    color: #F0F0F0;
+    font-weight: 600;
+    /* line-height: 28px; */
+}
+.tit4{
+    font-family: BasierSquare;
+    font-weight: 400;
+    color: #949090;
+    line-height: 28px;
+}
+.btn-0{
+    background-color: #232323;
+    color: #434343;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+.para-1{
+    font-family: BasierSquare;
+    font-weight: 500;
+    color: hsl(0, 0%, 59.61%);
+}
+.btn-11{
+    background-color: #F0F0F0;
+    color: #434343;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+.para2{
+    font-family: BasierSquare;
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(0, 0%, 59.21%);
+    line-height: 24px;
+}
+.para3,
+.para4{
+    font-family: BasierSquare;
+    font-weight: 600;
+    color: hsl(0, 0%, 59.21%);
+}
+.para3 span{
+    color: #F0F0F0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.para4 span{
+    color: #F23115;
+}
+
+/* =============== Enterprise Page Design ============= */
+
+.tit5{
+    font-family: BasierSquare;
+    font-weight: 600;
+    font-size: 50px;
+    color: #F0F0F0;
+}
+.btn-12{
+    background-color: #F0F0F0;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 35px;
+    font-family: BasierSquare;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.btn-12:hover{
+    background-color: #D7D7D7;
+}
+.scroll-container{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-primary,
+.carousel-secondary{
+    position: absolute;
+    top: 26%;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.carousel-primary img{
+    filter: brightness(0.5) invert(1);
+    /* width: 100%; */
+    margin-left: 20px;
+    border-radius: 16px;
+    object-fit: contain;
+}
+.carousel-primary{
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal 50s linear infinite;
+}
+.carousel-secondary{
+    display: flex;
+    animation: scroll-horizontal 50s linear infinite;
+    animation-delay: 10s;
+}
+@keyframes scroll-horizontal {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+.tit6{
+    font-family: BasierSquare;
+    font-weight: 600;
+    color: #F0F0F0;
+}
+.para5{
+    font-family: BasierSquare;
+    font-weight: 500;
+    color: #F0F0F0;
+}
+.btn-13{
+    outline: none;
+    border: none;
+    background-color: #232323;
+    border-radius: 10px;
+    padding: 4px 15px;
+    cursor: no-drop;
+}
+.cr-icon{
+    font-size: 30px;
+    color: #4E4E4E;
+}
+.ch-icon{
+    font-size: 30px;
+    color: #F0F0F0;
+}
+.plan,
+.pro-plan{
+    border-radius: 15px;
+    padding: 21px;
+}
+.pro-plan{
+    background-color: #1E1E1E;
+}
+
+/* ================ FAQ Page Design =============== */
+
+.accordion-button{
+    background-color: #1E1E1E !important;
+    color: hsl(0, 0%, 59.21%) !important;
+    border-radius: 10px;
+}
+.accordion-item{
+    background-color: #2E2E2E !important;
+    color: hsl(0, 0%, 59.21%) !important;
+    border: none !important;
+}
+.accordion-button:not(.collapsed){
+    background-color: #2E2E2E !important;
+    color: hsl(0, 0%, 59.21%) !important;
+}

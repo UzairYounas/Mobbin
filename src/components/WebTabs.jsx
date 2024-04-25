@@ -41,6 +41,7 @@ import notionlogo from '../assets/images/notionlogo.webp'
 import bonsai from '../assets/images/bonsai.mp4'
 import bonsailogo from '../assets/images/bonsailogo.webp'
 
+
 function WebTabs({toggleState}) {
 
     const settings = {

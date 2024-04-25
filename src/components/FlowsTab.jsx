@@ -85,7 +85,7 @@ function FlowsTab({ toggleState }) {
     return (
         <>
             <div className={toggleState === 1 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
                             <h3 className='head1'>Onboarding</h3>
@@ -106,7 +106,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -160,7 +160,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4'>
+                    <Slider {...settings} className='pt-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -229,7 +229,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 2 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
 
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
@@ -251,7 +251,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -336,7 +336,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -374,7 +374,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 3 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
                             <h3 className='head1'>Onboarding</h3>
@@ -395,7 +395,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -449,7 +449,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4'>
+                    <Slider {...settings} className='pt-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -518,7 +518,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 4 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
 
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
@@ -540,7 +540,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -625,7 +625,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -663,7 +663,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 5 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
                             <h3 className='head1'>Onboarding</h3>
@@ -684,7 +684,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -738,7 +738,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4'>
+                    <Slider {...settings} className='pt-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -807,7 +807,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 6 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
 
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
@@ -829,7 +829,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4'>
+                    <Slider {...settings} className='pt-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -914,7 +914,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -952,7 +952,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 7 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
                             <h3 className='head1'>Onboarding</h3>
@@ -973,7 +973,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1027,7 +1027,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4'>
+                    <Slider {...settings} className='pt-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1096,7 +1096,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 8 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
 
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
@@ -1118,7 +1118,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4'>
+                    <Slider {...settings} className='pt-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1203,7 +1203,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1241,7 +1241,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 9 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
                             <h3 className='head1'>Onboarding</h3>
@@ -1262,7 +1262,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1316,7 +1316,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1385,7 +1385,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 10 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
 
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
@@ -1407,7 +1407,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1492,7 +1492,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1530,7 +1530,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 11 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
                             <h3 className='head1'>Onboarding</h3>
@@ -1551,7 +1551,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1605,7 +1605,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1674,7 +1674,7 @@ function FlowsTab({ toggleState }) {
             </div>
 
             <div className={toggleState === 12 ? "d-block" : "d-none"}>
-                <div className="container-fluid mt-5 p-l-32 p-r-32">
+                <div className="container-fluid mt-4 p-l-32 p-r-32">
 
                     <div className="d-flex align-items-center justify-content-between flows-data" style={{ cursor: 'pointer' }}>
                         <div className="d-flex flows-heading align-items-center gap-2">
@@ -1696,7 +1696,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>19 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -1781,7 +1781,7 @@ function FlowsTab({ toggleState }) {
                         </div>
                     </div>
                     <p style={{ color: '#939393' }}>33 Screens</p>
-                    <Slider {...settings} className='pt-4 pb-5'>
+                    <Slider {...settings} className='pt-3 pb-3'>
                         <div className='flows-img'>
                             <video loop onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
