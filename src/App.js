@@ -9,6 +9,9 @@ import Flows from './components/Flows';
 import Android from './Pages/Android';
 import WebApp from './components/WebApp';
 import Pricing from './Pages/Pricing';
+import Changelog from './Pages/Changelog';
+import Changelogdetail from './components/Changelogdetail';
+import Setting from './Pages/Setting';
 
 import {
   createBrowserRouter,
@@ -47,6 +50,18 @@ const router = createBrowserRouter([
   {
     path: "/pricing",
     element: <Pricing />
+  },
+  {
+    path: "/changelog",
+    element: <Changelog />
+  },
+  {
+    path: "/changelogdetail",
+    element: <Changelogdetail />
+  },
+  {
+    path: "/setting",
+    element: <Setting />
   }
 
 ]);

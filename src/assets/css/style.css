@@ -31,6 +31,7 @@ body::-webkit-scrollbar-thumb,
     background-color: #515151;
     border-radius: 15px;
 }
+
 .bg-1{
     background-color: #111111;
 }
@@ -136,7 +137,8 @@ header{
 .btn-3:hover{
     background-color: #4d4c4c59;
 }
-.btn-3 img{
+.btn-3 img,
+.btn3 img{
     border-radius: 50%;
     width: 30px;
 }
@@ -320,6 +322,7 @@ header{
 }
 .blur{
     position: absolute;
+
     width: 50%;
     background-color: red;
 }
@@ -694,7 +697,7 @@ header{
 /* ================= Pricing Page Design =============== */
 
 .heading{
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding-top: 100px;
 }
 .tab-bg{
@@ -815,7 +818,7 @@ header{
     background-color: #D7D7D7;
 }
 .scroll-container{
-    height: 100vh;
+    height: 65vh;
     position: relative;
     overflow: hidden;
 }
@@ -830,20 +833,21 @@ header{
 }
 .carousel-primary img{
     filter: brightness(0.5) invert(1);
-    /* width: 100%; */
-    margin-left: 20px;
+    width: 100%;
+    /* margin-left: 20px; */
     border-radius: 16px;
     object-fit: contain;
 }
 .carousel-primary{
     display: flex;
     justify-content: space-around;
+    gap: 55px;
     animation: scroll-horizontal 50s linear infinite;
 }
 .carousel-secondary{
     display: flex;
     animation: scroll-horizontal 50s linear infinite;
-    animation-delay: 10s;
+    /* animation-delay: 10s; */
 }
 @keyframes scroll-horizontal {
     0%{
@@ -890,17 +894,138 @@ header{
 
 /* ================ FAQ Page Design =============== */
 
+.tit7{
+    font-family: BasierSquare;
+    font-weight: 600;
+    color: #F0F0F0;
+    font-size: 60px;
+}
 .accordion-button{
     background-color: #1E1E1E !important;
-    color: hsl(0, 0%, 59.21%) !important;
-    border-radius: 10px;
+    color: #F0F0F0 !important;
+    border-radius: 15px !important;
+    font-family: BasierSquare !important;
+    font-weight: 500 !important;
+    letter-spacing: -1px;
+    font-size: 18px !important;
+
 }
 .accordion-item{
     background-color: #2E2E2E !important;
     color: hsl(0, 0%, 59.21%) !important;
     border: none !important;
+    border-radius: 15px !important;
 }
 .accordion-button:not(.collapsed){
+    border: none !important;
+    border-radius: 15px !important;
     background-color: #2E2E2E !important;
-    color: hsl(0, 0%, 59.21%) !important;
+    box-shadow: none !important;
+}
+.accordion-item:first-of-type{
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+.accordion-button::after{
+    background-image: url(../images/plus.png) !important;
+    background-size: 1rem !important;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../images/cross.png) !important;
+    background-size: 1rem !important;
+}
+
+/* ============== Footer Design ============== */
+.hr2{
+    height: 2px;
+    opacity: 1;
+    background-color: #3D3D3D;
+}
+.tw-icon{
+    font-size: 28px;
+    color: #868686;
+    transition: all 0.2s;
+}
+.tw-icon:hover{
+    color: #F0F0F0;
+}
+
+/* ============= Changelog Page Design =============== */
+.tit8{
+    font-family: BasierSquare;
+    font-weight: 600;
+    font-size: 42px;
+    color: #D9D9D9;
+}
+.para6{
+    font-family: BasierSquare;
+    font-weight: 500;
+    font-size: 16px;
+    color: #D9D9D9;
+}
+.p-l-75{
+    padding-left: 275px;
+}
+ol li::marker,
+ul li::marker {
+    color: #747474;
+}
+.text-decoration-none:hover .back-btn{
+    margin-right: 7px;
+}
+
+/* ============== Seeting Page Design ============ */
+.set-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    padding: 12px;
+    background-color: #111111;
+}
+.seet-icon{
+    font-size: 26px;
+    color: #2E2E2E;
+}
+.active-set{
+    color: #F0F0F0;
+}
+.btn-14,
+.btn-15{
+    font-family: BasierSquare;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #F0F0F0;
+    background: transparent;
+    transition: all 0.2s;
+}
+.btn-15:hover{
+    border-bottom: 1.7px solid #F0F0F0;
+}
+.btn-14{
+    color: #F24822;
+}
+.btn-14:hover{
+    border-bottom: 1.7px solid #F24822;
+}
+.btn16{
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: BasierSquare;
+    font-weight: 500;
+    color: #F0F0F0;
+}
+.sett-tab{
+    border: 1px solid hsl(0, 0%, 23.92%);
+    border-radius: 15px;
+}
+.tit9{
+    font-family: BasierSquare;
+    font-weight: 600;
+    color: #F0F0F0;
+    font-size: 17px;
+    letter-spacing: 1px;
 }

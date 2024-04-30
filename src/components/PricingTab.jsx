@@ -425,7 +425,6 @@ function PricingTab() {
         </div>
 
       </div>
-n
 
 
       <p className='para3'>Are you a student or Educator? <span>Get a Discount</span></p>

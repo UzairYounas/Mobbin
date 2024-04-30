@@ -3,6 +3,8 @@ import PricingTab from '../components/PricingTab'
 import Navbar from '../components/Common/Navbar'
 import Enterprise from '../components/Enterprise'
 import FAQ from '../components/FAQ'
+import Footer from '../components/Footer'
+
 
 function Pricing() {
     return (
@@ -20,6 +22,7 @@ function Pricing() {
                         <Enterprise />
                         <FAQ />
                     </div>
+                    <Footer />
                 </div>
             </div>
         </>
