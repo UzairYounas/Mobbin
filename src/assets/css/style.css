@@ -769,10 +769,15 @@ header{
 }
 .btn-11{
     background-color: #F0F0F0;
-    color: #434343;
+    color: #2E2E2E;
     outline: none;
     border: none;
     border-radius: 15px;
+    font-family: BasierSquare;
+    font-weight: 600;
+}
+.btn-11:hover{
+    background-color: #D7D7D7;
 }
 .para2{
     font-family: BasierSquare;
@@ -873,7 +878,7 @@ header{
     background-color: #232323;
     border-radius: 10px;
     padding: 4px 15px;
-    cursor: no-drop;
+    cursor: no-drop !important;
 }
 .cr-icon{
     font-size: 30px;
@@ -975,20 +980,24 @@ ul li::marker {
 }
 
 /* ============== Seeting Page Design ============ */
+.heading2{
+    padding-top: 100px;
+}
 .set-nav{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9;
-    padding: 12px;
+    padding: 15px 32px;
     background-color: #111111;
 }
 .seet-icon{
     font-size: 26px;
     color: #2E2E2E;
 }
-.active-set{
+.active-set .seet-icon,
+.active-set .mb-0{
     color: #F0F0F0;
 }
 .btn-14,
@@ -1028,4 +1037,33 @@ ul li::marker {
     color: #F0F0F0;
     font-size: 17px;
     letter-spacing: 1px;
+}
+.para7{
+    font-family: BasierSquare;
+    font-weight: 500;
+    font-size: 14px;
+    color: #949090;
+}
+.para7 span{
+    color: #F24822;
+}
+.security{
+    background-color: #1E1E1E;
+    border-radius: 14px;
+    padding: 8px 12px;
+}
+.avtar1{
+    border-radius: 50%;
+    position: absolute;
+    left: -54px;
+}
+.avtar2{
+    border-radius: 50%;
+    z-index: 1;
+    border: 2px solid #111111;
+}
+.avtar3{
+    border-radius: 50%;
+    position: absolute;
+    right: -53px;
 }
