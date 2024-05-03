@@ -14,6 +14,7 @@ import { FiLock } from "react-icons/fi";
 
 import userimg from '../assets/images/user-img.png'
 import SettingTab from '../components/SettingTab';
+import RequestModalBox from '../components/RequestModalBox';
 
 function Setting() {
     let [status, setStatus] = useState(false)
@@ -139,7 +140,9 @@ function Setting() {
                         <SettingTab toggleState={toggleState} toggleTab={toggleTab} />
                     </div>
 
-                    <div className="col-md-3" style={{paddingRight: '32px'}}></div>
+                    <div className="col-md-3" style={{paddingRight: '32px'}}>
+                        <RequestModalBox />
+                    </div>
                 </div>
             </div>
         </div>

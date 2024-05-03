@@ -23,13 +23,87 @@ function SettingTab({ toggleState, toggleTab }) {
     const handleDelete = () => {
         setSelectedFile(null);
     };
+
+    const [isEditing, setIsEditing] = useState(false);
+    const [fullName, setFullName] = useState('User Name');
+    const [tempFullName, setTempFullName] = useState('');
+
+    const handleEditClick = () => {
+        setIsEditing(true);
+        setTempFullName(fullName);
+    };
+
+    const handleCancelClick = () => {
+        setIsEditing(false);
+        setTempFullName('');
+    };
+
+    const handleInputChange = (e) => {
+        setTempFullName(e.target.value);
+    };
+
+    const handleSaveClick = () => {
+        setIsEditing(false);
+        setFullName(tempFullName);
+    };
+
+    const [isEdit, setIsEdit] = useState(false);
+    const [fullEmail, setFullEmail] = useState('example12@gmail.com');
+    const [tempFullEmail, setTempFullEmail] = useState('');
+
+    const handleEdit = () => {
+        setIsEdit(true);
+        setTempFullEmail(fullName);
+    };
+
+    const handleCancel = () => {
+        setIsEdit(false);
+        setTempFullEmail('');
+    };
+
+    const handleInput = (e) => {
+        setTempFullEmail(e.target.value);
+    };
+
+    const handleSave = () => {
+        setIsEdit(false);
+        setFullEmail(tempFullEmail);
+    };
+
+    const [isEdite, setIsEdite] = useState(false);
+    const [fullPass, setFullPass] = useState('********');
+    const [tempFullPass, setTempFullPass] = useState('');
+
+    const handleEdite = () => {
+        setIsEdite(true);
+        setTempFullPass(fullPass);
+    };
+
+    const handleCancele = () => {
+        setIsEdite(false);
+        setTempFullPass('');
+    };
+
+    const handleInpute = (e) => {
+        setTempFullPass(e.target.value);
+    };
+
+    const handleSaveBtn = () => {
+        setIsEdite(false);
+        setFullPass(tempFullPass);
+    };
+
+
     return (
+
         <>
             <div className={toggleState === 1 ? "d-block mt-4 p-l-32 p-r-32" : "d-none mt-4 p-l-32 p-r-32"}>
 
-                <div className="position-relative" style={{ width: '120px', height: '120px' }}>
+                <div className="position-relative" style={{ width: '120px', height: '120px', marginBottom: '60px' }}>
                     <input type="file" onChange={handleFileChange} accept="image/png,image/jpeg,image/webp" style={{ position: 'absolute', top: '25px', left: '30px', zIndex: '1' }} />
-
+                    <label htmlFor="fileInput">
+                        {selectedFile ? selectedFile.name : 'Add avtatar'}
+                    </label>
                     {selectedFile ? (
                         <div className='position-absolute'>
                             <img
@@ -41,7 +115,7 @@ function SettingTab({ toggleState, toggleTab }) {
                             <button onClick={handleDelete} style={{ position: 'absolute', bottom: '16px', left: '50px' }}>Delete</button>
                         </div>
                     ) : (
-                        <p>No file selected</p>
+                        <p></p>
                     )}
 
                 </div>
@@ -66,37 +140,113 @@ function SettingTab({ toggleState, toggleTab }) {
 
                 <h2 className='tit3 mt-5 mb-3'>Personal details</h2>
 
-                <div className='mt-4'>
-                    <div className="d-flex align-items-center justify-content-between">
-                        <p className='tit6 mb-0'>Name</p>
-                        <button className='btn-15'>Edit</button>
-                    </div>
-                    <p className="para3">user name</p>
-                    <hr className="hr2" />
+                <div>
+                    {isEditing ? (
+                        <>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <p className='tit6 mb-0'>Edit name</p>
+                                <button className='btn-15' onClick={handleCancelClick}>Cancel</button>
+                            </div>
+                            <p className='para7'>This will be visible on your profile and for your other team members if you’re in a team</p>
+                            <p className='tit6 mb-0 mt-2'>Full name</p>
+                            <input
+                                type="text"
+                                className='user-nam mt-2'
+                                value={tempFullName}
+                                onChange={handleInputChange}
+                            />
+                            <button className='btn-11 mt-4' style={{ padding: '10px 15px' }} onClick={handleSaveClick}>Save</button>
+                        </>
+                    ) : (
+                        <div className='mt-4'>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <p className='tit6 mb-0'>Name</p>
+                                <button className='btn-15' onClick={handleEditClick}>Edit</button>
+                            </div>
+                            <p className="para3">{fullName}</p>
+                            <hr className="hr2" />
+                        </div>
+                    )}
                 </div>
 
-                <div className='mt-4'>
-                    <div className="d-flex align-items-center justify-content-between">
-                        <p className='tit6 mb-0'>Email Address</p>
-                        <button className='btn-15'>Edit</button>
-                    </div>
-                    <p className="para3">user@gmail.com</p>
-                    <hr className="hr2" />
+                <div>
+                    {isEdit ? (
+                        <div className='mt-5'>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <p className='tit6 mb-0'>Edit email address</p>
+                                <button className='btn-15' onClick={handleCancel}>Cancel</button>
+                            </div>
+                            <p className='para7'>This will be used for logging in and account recovery.</p>
+                            <p className='tit6 mb-0 mt-2'>Email address</p>
+                            <input
+                                type="email"
+                                className='user-nam mt-2'
+                                value={tempFullEmail}
+                                onChange={handleInput}
+                            />
+                            <button className='btn-11 mt-4' style={{ padding: '10px 15px' }} onClick={handleSave}>Save</button>
+                        </div>
+                    ) : (
+                        <div className='mt-5'>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <p className='tit6 mb-0'>Email address</p>
+                                <button className='btn-15' onClick={handleEdit}>Edit</button>
+                            </div>
+                            <p className="para3">{fullEmail}</p>
+                            <hr className="hr2" />
+                        </div>
+                    )}
                 </div>
 
-                <div className='mt-4'>
-                    <div className="d-flex align-items-center justify-content-between">
-                        <p className='tit6 mb-0'>Password</p>
-                        <button className='btn-15'>Edit</button>
-                    </div>
-                    <p className="para3">******</p>
-                    <hr className="hr2" />
+                <div>
+                    {isEdite ? (
+                        <div className='mt-5'>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <p className='tit6 mb-0'>Edit Password</p>
+                                <button className='btn-15' onClick={handleCancele}>Cancel</button>
+                            </div>
+                            <p className='para7'>Password needs to be 8 characters and contain at least one alphabet and one number.</p>
+                            {/* <p className='tit6 mb-0 mt-2'>Edit Password</p> */}
+                            <div className="d-flex align-items-center gap-3">
+                                <div className="d-flex flex-column gap-2 w-100">
+                                    <label htmlFor="">New Password</label>
+                                    <input
+                                        type="password"
+                                        className='user-nam'
+                                        value={tempFullPass}
+                                        onChange={handleInpute}
+                                    />
+                                </div>
+
+                                <div className="d-flex flex-column gap-2 w-100">
+                                    <label htmlFor="">Confirm Password</label>
+                                    <input
+                                        type="password"
+                                        className='user-nam'
+                                        value={tempFullPass}
+                                        onChange={handleInpute}
+                                    />
+                                </div>
+
+                            </div>
+                            <button className='btn-11 mt-4' style={{ padding: '10px 15px' }} onClick={handleSaveBtn}>Save</button>
+                        </div>
+                    ) : (
+                        <div className='mt-5'>
+                            <div className="d-flex align-items-center justify-content-between">
+                                <p className='tit6 mb-0'>Password</p>
+                                <button className='btn-15' onClick={handleEdite}>create new</button>
+                            </div>
+                            <p className="para3">{fullPass}</p>
+                            <hr className="hr2" />
+                        </div>
+                    )}
                 </div>
 
                 <h3 className='tit6 mt-5 mb-4'>Manage account</h3>
                 <div className="d-flex align-items-center justify-content-between">
                     <p className='tit6 mb-0'>Delete account</p>
-                    <button className='btn-14'>Edit</button>
+                    <button className='btn-14'>Delete</button>
                 </div>
                 <p className="para3">permanently delete your Mobbin account</p>
             </div>
@@ -419,5 +569,4 @@ function SettingTab({ toggleState, toggleTab }) {
         </>
     )
 }
-
 export default SettingTab

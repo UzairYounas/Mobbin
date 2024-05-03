@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Modal, ModalBody } from 'reactstrap'; // Import the necessary components from your modal library
+import { Modal, ModalBody } from 'reactstrap';
 
 import { FiSearch } from "react-icons/fi";
 import { BsStars } from "react-icons/bs";
