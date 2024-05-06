@@ -162,9 +162,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -187,9 +199,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -218,9 +242,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -249,9 +285,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -274,9 +322,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -305,9 +365,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -336,9 +408,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -361,9 +445,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -392,9 +488,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -423,9 +531,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -448,9 +568,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -479,9 +611,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -510,9 +654,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -541,9 +697,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -572,9 +740,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -597,9 +777,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -628,9 +820,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -659,9 +863,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -690,9 +906,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -721,9 +949,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -746,9 +986,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -777,9 +1029,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -802,9 +1066,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -833,9 +1109,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -864,9 +1152,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -895,9 +1195,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -920,9 +1232,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -951,9 +1275,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -982,9 +1318,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1013,13 +1361,24 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
-
 
                     <div className="col-lg-3 col-md-4 col-sm-6 app-div">
                         <div className='tinder'>
@@ -1045,9 +1404,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1070,9 +1441,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1101,9 +1484,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1126,9 +1521,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1157,9 +1564,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1194,9 +1613,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1225,9 +1656,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1250,9 +1693,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1281,9 +1736,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1306,9 +1773,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1337,9 +1816,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1368,9 +1859,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1393,9 +1896,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1424,9 +1939,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1455,9 +1982,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1486,9 +2025,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1511,9 +2062,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1542,9 +2105,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1573,9 +2148,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1604,9 +2191,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1635,9 +2234,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1669,6 +2280,21 @@ function UITab({toggleState}) {
                                 <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1694,6 +2320,21 @@ function UITab({toggleState}) {
                                 <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
+                                    <BsThreeDots className='text-white' />
+                                </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1722,9 +2363,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1753,9 +2406,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1784,9 +2449,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1815,9 +2492,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1840,9 +2529,21 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
@@ -1865,15 +2566,29 @@ function UITab({toggleState}) {
                                 <div className="save-icon position-absolute d-flex align-items-center justify-content-center">
                                     <MdOutlineSaveAlt />
                                 </div>
-                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center">
+                                <div className="dots-icon position-absolute d-flex align-items-center justify-content-center" onClick={toggleVisibility}>
                                     <BsThreeDots className='text-white' />
                                 </div>
+                                {isVisible &&
+                                        <div className='dotspopup p-2 d-flex justify-content-center flex-column z-3'>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaDownload className='h5 m-0' />
+                                                <p>Download all Screens</p>
+                                            </div>
+                                            <div className="d-flex align-items-center popup-data m-0 gap-2 p-2">
+                                                <FaLink className='h4 m-0' />
+                                                <p>Copy app link</p>
+                                            </div>
+                                        </div>
+                                    }
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+
+            
 
             <div className={toggleState === 6 ? "d-block container-fluid mt-4 p-l-32 p-r-32" : "d-none container-fluid mt-4 p-l-32 p-r-32"}>
                 <div className="row">

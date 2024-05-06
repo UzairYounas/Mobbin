@@ -1000,6 +1000,49 @@ ul li::marker {
 .active-set .mb-0{
     color: #F0F0F0;
 }
+.user-profile{
+    display: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.user-pic:hover{
+    background-color: #1E1E1E;
+}
+.user-pic:hover .user-profile{
+    display: block;
+    position: absolute;
+    bottom: 57px;
+    left: 22px;
+    font-family: BasierSquare;
+    font-weight: 600;
+    color: #F0F0F0;
+    font-size: 19px;
+}
+.user-pic{
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 35px;
+    background-color: #3D3D3D;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.profile-img-del{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: BasierSquare;
+    font-weight: 600;
+    color: #F0F0F0;
+    font-size: 19px;
+}
+.img-opt{
+    display: none;
+    transition: all 0.2s;
+}
+.user-pic:hover .img-opt{
+    display: block;
+}
 .btn-14,
 .btn-15{
     font-family: BasierSquare;
@@ -1123,8 +1166,44 @@ ul li::marker {
     font-size: 15px;
     color: #F0F0F0;
 }
-@media (min-width: 576px) {
+.cross-btn{
+    font-size: 29px;
+    color: #959595;
+    background-color: #2E2E2E;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.cross-btn:hover{
+    background-color: #3D3D3D;
+}
+.mod-btn{
+    cursor: pointer;
+}
+.mod-btn:hover,
+.mod-btn:focus{
+    color: #F0F0F0;
+}
+.active-bor{
+    border-bottom: 2px solid #F0F0F0;
+    color: #F0F0F0;
+}
+
+
+/* @media (min-width: 576px) {
     .modal-dialog {
         max-width: 560px !important;
     }
+} */
+
+.cancel-btn{
+    outline: none;
+    border: 1.5px solid #3D3D3D;
+    border-radius: 15px;
+    padding: 7px 25px;
+    font-family: BasierSquare;
+    font-weight: 600;
+    color: #F0F0F0;
+    background-color: transparent;
 }

@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import { Modal, ModalBody } from 'reactstrap';
 
 import { FaCheck } from "react-icons/fa6";
 import { FaLock } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
+
 import avatar1 from '../assets/images/avatar-left.webp'
 import avatar2 from '../assets/images/avatar-center.webp'
 import avatar3 from '../assets/images/avatar-right.webp'
 
 
-function SettingTab({ toggleState, toggleTab }) {
+function SettingTab({args, toggleState, toggleTab }) {
 
     const [visibility, setVisibility] = useState(1);
     const toggleVisibility = (index) => {
@@ -93,17 +96,21 @@ function SettingTab({ toggleState, toggleTab }) {
         setFullPass(tempFullPass);
     };
 
+    const [modal, setModal] = useState(false);
+
+    const toggle = () => setModal(!modal);
+
 
     return (
 
         <>
             <div className={toggleState === 1 ? "d-block mt-4 p-l-32 p-r-32" : "d-none mt-4 p-l-32 p-r-32"}>
 
-                <div className="position-relative" style={{ width: '120px', height: '120px', marginBottom: '60px' }}>
-                    <input type="file" onChange={handleFileChange} accept="image/png,image/jpeg,image/webp" style={{ position: 'absolute', top: '25px', left: '30px', zIndex: '1' }} />
-                    <label htmlFor="fileInput">
-                        {selectedFile ? selectedFile.name : 'Add avtatar'}
+                <div className="position-relative user-pic">
+                    <label htmlFor="selct-img" className='user-profile'>
+                        Add Avatar
                     </label>
+                    <input id='selct-img' type="file" className='d-none' onChange={handleFileChange} accept="image/png,image/jpeg,image/webp" style={{ position: 'absolute', top: '25px', left: '30px', zIndex: '1' }} />
                     {selectedFile ? (
                         <div className='position-absolute'>
                             <img
@@ -111,30 +118,20 @@ function SettingTab({ toggleState, toggleTab }) {
                                 alt="Uploaded"
                                 style={{ borderRadius: "50%", width: "150px", height: "150px" }}
                             />
-                            <br />
-                            <button onClick={handleDelete} style={{ position: 'absolute', bottom: '16px', left: '50px' }}>Delete</button>
+                            {/* <br /> */}
+                            <div className='img-opt'>
+                                <label htmlFor="selct-img" className='user-profile' style={{ position: 'absolute', top: '40px', left: '40px' }}>
+                                    Change
+                                </label>
+                                <input id='selct-img' type="file" className='d-none' onChange={handleFileChange} accept="image/png,image/jpeg,image/webp" />
+                                <button onClick={handleDelete} className='profile-img-del' style={{ position: 'absolute', bottom: '26px', left: '50px' }}>Delete</button>
+                            </div>
                         </div>
                     ) : (
-                        <p></p>
+                        <></>
                     )}
 
                 </div>
-                {/* <div className='position-relative'>
-                    <input type="file" onChange={handleFileChange} accept="image/png,image/jpeg,image/webp" />
-                    {selectedFile ? (
-                        <div className='position-absolute'>
-                            <img
-                                src={URL.createObjectURL(selectedFile)}
-                                alt="Uploaded"
-                                style={{ borderRadius: "50%", width: "150px", height: "150px" }}
-                            />
-                            <br />
-                            <button onClick={handleDelete}>Delete</button>
-                        </div>
-                    ) : (
-                        <p>No file selected</p>
-                    )}
-                </div> */}
                 <h4 className='tit8'>User Name</h4>
                 <p className='para3'>user@gmail.com</p>
 
@@ -246,9 +243,29 @@ function SettingTab({ toggleState, toggleTab }) {
                 <h3 className='tit6 mt-5 mb-4'>Manage account</h3>
                 <div className="d-flex align-items-center justify-content-between">
                     <p className='tit6 mb-0'>Delete account</p>
-                    <button className='btn-14'>Delete</button>
+                    <button className='btn-14' onClick={toggle}>Delete</button>
                 </div>
                 <p className="para3">permanently delete your Mobbin account</p>
+
+                <Modal isOpen={modal} toggle={toggle} {...args} centered zIndex={9} size="sm">
+                    <ModalBody>
+                        <div className="d-flex flex-column gap-3">
+                            <div className="d-flex justify-content-between align-items-cnter">
+                                <div></div>
+                                <h5 className="tit3">Are you sure?</h5>
+                                <RxCross2 className='cross-btn' onClick={toggle} />
+                            </div>
+                            <div className="text-center para3">
+                                Deleting your account is permanent and irreversible. You will lose all your collections and membership status, if any.
+                            </div>
+                            <div className="d-flex justify-content-between">
+                                <button className='cancel-btn' onClick={toggle}>Cancel</button>
+                                <button className='cancel-btn' onClick={toggle} style={{ color: '#F24822', border: '1.5px solid #F24822' }}>Delete account</button>
+                            </div>
+                        </div>
+                    </ModalBody>
+                </Modal>
+
             </div>
 
             <div className={toggleState === 2 ? "d-block" : "d-none"}>

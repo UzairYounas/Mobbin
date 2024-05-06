@@ -17,6 +17,9 @@ import SettingTab from '../components/SettingTab';
 import RequestModalBox from '../components/RequestModalBox';
 
 function Setting() {
+
+    const [show, setShow] = useState(false);
+    
     let [status, setStatus] = useState(false)
     const handleToggle = () => {
         setStatus(!status)
@@ -44,7 +47,8 @@ function Setting() {
                             <h5>User-name</h5>
                             <p>user12@gmail.com</p>
                         </div>
-                        <button className='btn-9'>Request Content</button>
+                        <button onClick={()=> setShow(!show)} className='btn-9'>Request Content</button>
+                         <RequestModalBox show={show} setShow={setShow} />
                         <hr className='hr-2' />
 
                         <div className="collection d-flex align-items-center gap-2">
