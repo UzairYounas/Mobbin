@@ -263,7 +263,7 @@ header{
     background-color: #2e2e2e8f;
 }
 .vr-1{
-    border-left: 1px solid #F0F0F0;
+    border-left: 1px solid #2E2E2E;
     height: 32px;
 }
 .btn-5,
@@ -299,7 +299,11 @@ header{
 .border:hover{
     background-color: #1E1E1E;
 }
-#filter-tab div{
+.border-secondary{
+    --bs-border-opacity: .5 !important;
+}
+#filter-tab div,
+#filter-tab .border{
     min-width: max-content;
 }
 .active-border{
@@ -379,8 +383,11 @@ header{
     background-color: #3d3d3de3;
 }
 .tab-icons{
-    /* display: none; */
-    transition: 0.4s;
+    display: none;
+    transition: all 0.4s;
+}
+.slick-prev:before{
+    content: "IoMdArrowRoundBack";
 }
 .slick-dots,
 .slick-prev,
@@ -531,8 +538,18 @@ header{
     z-index: 1 !important;
 }
 .slick-prev:before, .slick-next:before{
-    font-size: 30px !important;
-    color: #000000 !important;
+    font-family: BasierSquare !important;
+    padding: 2px 6px;
+    background-color: #111111;
+    border-radius: 11px;
+    font-size: 24px !important;
+    /* color: #000000 !important; */
+}
+.slick-prev:before {
+    content: '🠔' !important;
+}
+.slick-next:before {
+    content: '🠖' !important;
 }
 .slick-next{
     right: -4px !important;
@@ -1206,4 +1223,63 @@ ul li::marker {
     font-weight: 600;
     color: #F0F0F0;
     background-color: transparent;
+}
+
+/* ================= Main Home Page Design =============== */
+.btn-latest{
+    background-color: lightblue;
+    color: hsl(203.84, 82.51%, 35.88%);
+    border-radius: 12px;
+    font-family: BasierSquare;
+    font-weight: 600;
+    font-size: 12px;
+}
+.btn-17{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 7px 13px;
+    border: 1.5px solid #F0F0F0;
+    border-radius: 14px;
+    color: #F0F0F0;
+    font-family: BasierSquare;
+    font-weight: 500;
+}
+.pad-265{
+    padding-left: 265px;
+    padding-right: 265px;
+}
+.p-80{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.gogl-btn{
+    border: 1.5px solid #2E2E2E;
+    border-radius: 12px;
+    width: 100%;
+    color: #F0F0F0;
+    font-family: BasierSquare;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.gogl-btn:hover{
+    background-color: #2e2d2d;
+}
+.mail-in{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 14px 15px;
+    border-radius: 12px;
+    background-color: #2E2E2E;
+    color: #F0F0F0;
+    font-family: BasierSquare;
+    font-weight: 600;
+}
+.mail-in:focus{
+    border: 1.5px solid #F0F0F0;
+}
+.invalid {
+    border: 1px solid red;
 }

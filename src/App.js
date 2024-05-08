@@ -17,6 +17,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import HomePage from './Pages/HomePage';
+import SignUp from './components/HomePgeComponents/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -62,6 +64,14 @@ const router = createBrowserRouter([
   {
     path: "/setting",
     element: <Setting />
+  },
+  {
+    path: "/homepage",
+    element: <HomePage />
+  },
+  {
+    path: "/signup",
+    element: <SignUp />
   }
 
 ]);
