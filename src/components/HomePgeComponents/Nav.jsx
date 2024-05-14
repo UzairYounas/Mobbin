@@ -40,8 +40,15 @@ function Nav() {
                             </div>
 
                             <div className="col-lg-4 col-md-4 col-sm-4 col-4 user-info">
-                                <div className='btn-3 d-flex align-items-center' onClick={handleToggle}>
-                                    <HiBars2 className='text-white h3 m-0' />
+
+                                <div className="d-flex align-items-center gap-2">
+                                    <button className='btn-1'>Pricing</button>
+                                    <button className='btn-1'>login</button>
+                                    <button className='btn-2'>create free account</button>
+
+                                    <div className='btn-3 d-flex align-items-center' onClick={handleToggle}>
+                                        <HiBars2 className='text-white h3 m-0' />
+                                    </div>
                                 </div>
                             </div>
                         </div>

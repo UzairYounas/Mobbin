@@ -1207,13 +1207,6 @@ ul li::marker {
     color: #F0F0F0;
 }
 
-
-/* @media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 560px !important;
-    }
-} */
-
 .cancel-btn{
     outline: none;
     border: 1.5px solid #3D3D3D;
@@ -1282,4 +1275,52 @@ ul li::marker {
 }
 .invalid {
     border: 1px solid red;
+}
+.filter-bg{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #111111);
+    width: 99%;
+    height: 400px;
+    position: absolute;
+    top: -400px;
+}
+.brand-img{
+    border-radius: 40px;
+    width: 140px;
+    position: absolute;
+}
+.anim-img{
+    width: 100%;
+    height: auto;
+    color: transparent;
+}
+.anime-forward{
+    transform-origin: left top;
+    animation: screen-animate-forward 300s linear infinite;
+}
+.anime-backward{
+    transform-origin: left top;
+    animation: screen-animate-backward 300s linear infinite;
+}
+
+@keyframes screen-animate-forward {
+    0%, 50%, 100%{
+        transform: rotate(-45deg) translate(-20%,-20%);
+    }
+    25%{
+        transform: rotate(-45deg) translate(-5%,-20%);
+    }
+    75%{
+        transform: rotate(-45deg) translate(-35%,-20%);
+    }
+}
+@keyframes screen-animate-backward {
+    0%, 50%, 100%{
+        transform: rotate(-45deg) translate(-20%,-20%);
+    }
+    25%{
+        transform: rotate(-45deg) translate(-35%,-20%);
+    }
+    75%{
+        transform: rotate(-45deg) translate(-5%,-20%);
+    }
 }
