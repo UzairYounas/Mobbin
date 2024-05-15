@@ -104,7 +104,7 @@ function SettingTab({args, toggleState, toggleTab }) {
     return (
 
         <>
-            <div className={toggleState === 1 ? "d-block mt-4 p-l-32 p-r-32" : "d-none mt-4 p-l-32 p-r-32"}>
+            <div className={toggleState === 1 ? "d-block mt-5 p-l-32 p-r-32" : "d-none mt-5 p-l-32 p-r-32"}>
 
                 <div className="position-relative user-pic">
                     <label htmlFor="selct-img" className='user-profile'>
@@ -203,8 +203,8 @@ function SettingTab({args, toggleState, toggleTab }) {
                                 <button className='btn-15' onClick={handleCancele}>Cancel</button>
                             </div>
                             <p className='para7'>Password needs to be 8 characters and contain at least one alphabet and one number.</p>
-                            {/* <p className='tit6 mb-0 mt-2'>Edit Password</p> */}
-                            <div className="d-flex align-items-center gap-3">
+                            
+                            <div className="d-flex flex-lg-row flex-md-row flex-sm-column flex-column align-items-center gap-3">
                                 <div className="d-flex flex-column gap-2 w-100">
                                     <label htmlFor="">New Password</label>
                                     <input
@@ -268,10 +268,10 @@ function SettingTab({args, toggleState, toggleTab }) {
 
             </div>
 
-            <div className={toggleState === 2 ? "d-block" : "d-none"}>
+            <div className={toggleState === 2 ? "d-block mt-5" : "d-none"}>
                 <h3 className='tit8'>Upgrade and <br /> get unlimited access</h3>
 
-                <div className="d-flex align-items-center gap-3  mt-3">
+                <div className="d-flex flex-lg-row flex-md-row flex-sm-column flex-column align-items-center gap-3  mt-3">
                     <div className="d-flex align-items-center tab-bg gap-4">
                         <div className={visibility === 1 ? "tab active-tab" : "tab"} onClick={() => toggleVisibility(1)}>Yearly</div>
                         <div className={visibility === 2 ? "tab active-tab" : "tab"} onClick={() => toggleVisibility(2)}>Quaterly</div>
@@ -309,7 +309,7 @@ function SettingTab({args, toggleState, toggleTab }) {
                     </div>
 
                 </div>
-                <div className={visibility === 1 ? "d-flex align-items-center gap-3 mt-3" : "d-none align-items-center gap-3 mt-3"}>
+                <div className={visibility === 1 ? "d-flex flex-lg-row flex-md-row flex-sm-column flex-column align-items-center gap-3 mt-3" : "d-none align-items-center gap-3 mt-3"}>
 
                     <div className="sett-tab w-100 p-4" style={{ backgroundColor: '#1E1E1E' }}>
                         <h5 className="tit4">Pro</h5>
@@ -384,7 +384,7 @@ function SettingTab({args, toggleState, toggleTab }) {
 
                 </div>
 
-                <div className={visibility === 2 ? "d-flex align-items-center gap-3 mt-3" : "d-none align-items-center gap-3 mt-3"}>
+                <div className={visibility === 2 ? "d-flex flex-lg-row flex-md-row flex-sm-column flex-column align-items-center gap-3 mt-3" : "d-none align-items-center gap-3 mt-3"}>
 
                     <div className="sett-tab w-100 p-4" style={{ backgroundColor: '#1E1E1E' }}>
                         <h5 className="tit4">Pro</h5>
@@ -459,7 +459,7 @@ function SettingTab({args, toggleState, toggleTab }) {
 
                 </div>
 
-                <div className={visibility === 3 ? "d-flex align-items-center gap-3 mt-3" : "d-none align-items-center gap-3 mt-3"}>
+                <div className={visibility === 3 ? "d-flex flex-lg-row flex-md-row flex-sm-column flex-column align-items-center gap-3 mt-3" : "d-none align-items-center gap-3 mt-3"}>
 
                     <div className="sett-tab w-100 p-4" style={{ backgroundColor: '#1E1E1E' }}>
                         <h5 className="tit4">Pro</h5>
@@ -542,7 +542,7 @@ function SettingTab({args, toggleState, toggleTab }) {
                 <button className='btn-11 p-2 mb-3'>contact sales</button>
             </div>
 
-            <div className={toggleState === 3 ? "d-block" : "d-none"}>
+            <div className={toggleState === 3 ? "d-block mt-5" : "d-none"}>
                 <div className="d-flex flex-column gap-3 align-items-center justify-content-center">
                     <div className="d-flex align-items-center justify-content-center position-relative">
                         <img src={avatar1} className='avtar1' />
@@ -555,7 +555,7 @@ function SettingTab({args, toggleState, toggleTab }) {
                 </div>
             </div>
 
-            <div className={toggleState === 4 ? "d-block" : "d-none"}>
+            <div className={toggleState === 4 ? "d-block mt-5" : "d-none"}>
                 <h4 className='tit5'>Security</h4>
 
                 <div className="d-flex align-items-center justify-content-between security mt-4">
@@ -566,7 +566,7 @@ function SettingTab({args, toggleState, toggleTab }) {
                     <button className='btn-11 p-2'>contact sales</button>
                 </div>
 
-                <div className="d-flex gap-3 mt-4">
+                <div className="d-flex flex-lg-row flex-md-row flex-sm-column flex-column gap-3 mt-4">
 
                     <div className="d-flex flex-column sett-tab gap-3 w-100" style={{ padding: "18px 22px" }}>
                         <h5 className="tit9">SAML SSO</h5>

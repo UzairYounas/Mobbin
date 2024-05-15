@@ -172,6 +172,10 @@ header{
     height: 2px;
     color: #F0F0F0;
 }
+.hr-3{
+    width: 180px;
+    color: #F0F0F0;
+}
 .btn-9{
     outline: none;
     border: none;
@@ -998,7 +1002,7 @@ ul li::marker {
 
 /* ============== Seeting Page Design ============ */
 .heading2{
-    padding-top: 100px;
+    padding-top: 62px;
 }
 .set-nav{
     position: fixed;
@@ -1283,6 +1287,11 @@ ul li::marker {
     position: absolute;
     top: -400px;
 }
+.client-img img{
+    width: 90px;
+    filter: brightness(0.5) invert(1);
+    opacity: .5;
+}
 .brand-img{
     border-radius: 40px;
     width: 140px;
@@ -1323,4 +1332,7 @@ ul li::marker {
     75%{
         transform: rotate(-45deg) translate(-5%,-20%);
     }
+}
+.p-113{
+    padding: 0 113px;
 }

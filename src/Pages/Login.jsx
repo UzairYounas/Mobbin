@@ -88,7 +88,7 @@ function Login() {
       <div className="row">
         <div className="col-md-6">
 
-          <div className="d-flex flex-column align-items-center justify-content-center gap-4" style={{padding: '40px 110px'}}>
+          <div className="d-flex flex-column align-items-center justify-content-center gap-4 p-113">
 
           <img
               className="mb-3"
@@ -98,7 +98,7 @@ function Login() {
 
             <h3 className="tit6 text-center">Welcome back</h3>
 
-            <div className="d-flex align-items-center justify-content-center gap-2 px-5 py-2 gogl-btn">
+            <div className="d-flex align-items-center justify-content-center gap-2 px-lg-5 px-md-5 px-sm-3 px-2  py-2 gogl-btn">
               <img src={google} />
               <p className="mb-0">Continue with Google</p>
             </div>
@@ -114,11 +114,11 @@ function Login() {
 
             {visibleDiv === "div2" && (
               <div className="d-flex justify-content-between gap-3 w-100">
-                <div className="d-flex align-items-center justify-content-center gap-2 px-5 py-2 gogl-btn text-center">
+                <div className="d-flex align-items-center justify-content-center gap-2 px-lg-5 px-md-5 px-sm-3 px-2 py-2 gogl-btn text-center">
                   <FaFacebook style={{ color: "#1877F2" }} />
                   Facebook
                 </div>
-                <div className="d-flex align-items-center justify-content-center gap-2 px-5 py-2 gogl-btn text-center">
+                <div className="d-flex align-items-center justify-content-center gap-2 px-lg-5 px-md-5 px-sm-3 px-2 py-2 gogl-btn text-center">
                   <FaXTwitter />
                   Twitter
                 </div>
@@ -126,9 +126,9 @@ function Login() {
             )}
 
             <div className="d-flex align-items-center justify-content-center gap-3">
-              <hr style={{ width: "180px", color: "#F0F0F0" }} />
+              <hr className="hr-3" />
               <p className="para3 mb-0">or</p>
-              <hr style={{ width: "180px", color: "#F0F0F0" }} />
+              <hr className="hr-3" />
             </div>
 
             <input
@@ -154,7 +154,7 @@ function Login() {
 
         <div className="col-md-6">
           <div
-            className="d-flex flex-grow-1 flex-column overflow-hidden"
+            className="d-xl-flex d-md-flex d-sm-none d-none flex-grow-1 flex-column overflow-hidden"
             style={{ height: "100vh" }}
           >
             <div className="d-flex gap-5 anime-forward">

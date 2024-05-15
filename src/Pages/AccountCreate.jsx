@@ -81,12 +81,8 @@ function AccountCreate() {
   return (
     <div className="contanier-fluid bg-1">
       <div className="row w-100">
-
         <div className="col-md-6">
-          <div
-            className="d-flex flex-column align-items-center justify-content-center gap-3"
-            style={{ padding: "0px 113px" }}
-          >
+          <div className="d-flex flex-column align-items-center justify-content-center gap-3 p-113">
             <img
               className="mb-3"
               src={logo}
@@ -99,15 +95,15 @@ function AccountCreate() {
               screens. No credit card required.
             </small>
 
-            <div className="d-flex align-items-center justify-content-center gap-2 px-5 py-2 gogl-btn">
+            <div className="d-flex align-items-center justify-content-center gap-2 px-lg-5 px-md-5 px-sm-3 px-2 py-2 gogl-btn">
               <img src={google} />
               <p className="mb-0">Continue with Google</p>
             </div>
 
             <div className="d-flex align-items-center justify-content-center gap-3">
-              <hr style={{ width: "180px", color: "#F0F0F0" }} />
+              <hr className="hr-3" />
               <p className="para3 mb-0">or</p>
-              <hr style={{ width: "180px", color: "#F0F0F0" }} />
+              <hr className="hr-3" />
             </div>
 
             <input
@@ -122,15 +118,18 @@ function AccountCreate() {
             </button>
             <p className="para7 text-center mt-3 mb-5">
               <small>
-                By continuing, you agree to Mobbin’s{" "}
-                <Link style={{ color: "#B5B5B5" }}>Terms of Service</Link> and{" "}
+                By continuing, you agree to Mobbin’s
+                <Link style={{ color: "#B5B5B5" }}>Terms of Service</Link> and
                 <Link style={{ color: "#B5B5B5" }}>Privacy Policy.</Link>
               </small>
             </p>
             <div className="mb-2">
               <small style={{ color: "#949090" }}>
-                Already have an account?{" "}
-                <Link to='/login' className="text-decoration-none text-secondary font-weight-bold">
+                Already have an account?
+                <Link
+                  to="/login"
+                  className="text-decoration-none text-secondary font-weight-bold"
+                >
                   Log in
                 </Link>
               </small>
@@ -140,46 +139,18 @@ function AccountCreate() {
               Trusted by teams at
             </small>
 
-            <div className="d-flex align-items-center justify-content-center gap-3">
-              <img
-                src={headspace}
-                style={{
-                  filter: "brightness(0.5) invert(1)",
-                  opacity: ".5",
-                  width: "90px",
-                }}
-              />
-              <img
-                src={svg3}
-                style={{
-                  filter: "brightness(0.5) invert(1)",
-                  opacity: ".5",
-                  width: "90px",
-                }}
-              />
-              <img
-                src={svg4}
-                style={{
-                  filter: "brightness(0.5) invert(1)",
-                  opacity: ".5",
-                  width: "90px",
-                }}
-              />
-              <img
-                src={svg8}
-                style={{
-                  filter: "brightness(0.5) invert(1)",
-                  opacity: ".5",
-                  width: "90px",
-                }}
-              />
+            <div className="d-flex align-items-center justify-content-center client-img gap-3">
+              <img src={headspace} />
+              <img src={svg3} />
+              <img src={svg4} />
+              <img src={svg8} />
             </div>
           </div>
         </div>
 
         <div className="col-md-6">
           <div
-            className="d-flex flex-grow-1 flex-column overflow-hidden"
+            className="d-xl-flex d-md-flex d-sm-none d-none flex-grow-1 flex-column overflow-hidden"
             style={{ height: "100vh" }}
           >
             <div className="d-flex gap-5 anime-forward">
@@ -538,10 +509,8 @@ function AccountCreate() {
                 <img src={screen_7_6} className="anim-img" />
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
   );

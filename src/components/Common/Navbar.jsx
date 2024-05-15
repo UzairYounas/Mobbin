@@ -22,7 +22,7 @@ function Navbar() {
         <div className="container-fluid p-l-32 pr-32">
           <div className="row py-2 d-flex align-items-center">
 
-            <div className="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div className="col-lg-4 col-md-12 col-sm-12 col-12 nav-btn">
               <div className="d-flex align-items-center gap-4 nav-icons">
                 <NavLink to ="/">
                   <IoLogoTwitch className='h3 text-white d-lg-block d-md-none d-sm-none d-none' />
@@ -68,16 +68,8 @@ function Navbar() {
             <hr className='hr-2' />
 
             <div className="collection d-flex align-items-center gap-2">
-              <FiSave className='h5 mb-0' />
-              <p className='mb-0'>Collection</p>
-            </div>
-            <div className="collection d-flex align-items-center gap-2">
               <MdOutlineSettings className='h5 mb-0' />
-              <p className='mb-0'>Settings</p>
-            </div>
-            <div className="collection d-flex align-items-center gap-2">
-              <MdOutlineCardMembership className='h5 mb-0' />
-              <p className='mb-0'>Memberships</p>
+              <Link to='/setting' className='mb-0 text-decoration-none' style={{color: '#F0F0F0'}}>Settings</Link>
             </div>
 
             <hr className='hr-2' />

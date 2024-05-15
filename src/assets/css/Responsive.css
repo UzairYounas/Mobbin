@@ -1,9 +1,14 @@
+@media (max-width: 1170px) {
+    .p-113{
+        padding: 0 70px;
+    }
+}
 @media (max-width: 991px) {
     .btn-1,
     .btn-2{
         display: none;
     }
-    .col-md-12{
+    .nav-btn{
         position: absolute;
         top: 60px;
     }
@@ -17,6 +22,19 @@
     .nav-icons{
         padding-top: 11px;
     }
+    .p-113{
+        padding: 0 35px;
+    }
+    .bg-md{
+        background-color: #111111;
+        position: fixed;
+        z-index: 1;
+    }
+}
+@media (max-width: 786px) {
+    .p-113{
+        padding: 0 20px;
+    }
 }
 @media (max-width: 767px) {
     .modal-tabs{
@@ -26,6 +44,7 @@
     .btn-6{
         display: none;
     }
+
 }
 @media (min-width: 576px) {
     .modal-dialog{
@@ -35,5 +54,21 @@
 @media (max-width: 520px) {
     .image-wrapper img{
         width: 50px;
+    }
+}
+@media (max-width: 375px) {
+    .hr-3{
+        width: 160px;
+    }
+    .client-img img{
+        width: 75px;
+    }
+}
+@media (max-width: 375px) {
+    .hr-3{
+        width: 110px;
+    }
+    .client-img img{
+        width: 55px;
     }
 }
